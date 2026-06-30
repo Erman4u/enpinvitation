@@ -535,23 +535,24 @@
 <!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
 <script>
   window.addEventListener('message', function(event) {
-    const data = event.data;
-    if (!data) return;
+    const payload = event.data;
+    if (!payload || payload.type !== 'update') return;
     
-    // Coba update text content dari ID statis jika ada
-    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
-    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
-    
-    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
-    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
-    
-    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
-    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
-    
-    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
-    if(locEl && data.event_location) locEl.innerText = data.event_location;
-    
-    console.log("Template menerima update dari editor:", data);
+    payload.updates.forEach(update => {
+      if (!update.selector) return;
+      const elements = document.querySelectorAll(update.selector);
+      elements.forEach(el => {
+        if (update.type === 'text') {
+          el.innerText = update.value;
+        } else if (update.type === 'image') {
+          if (el.tagName.toLowerCase() === 'img') {
+            el.src = update.value;
+          } else {
+            el.style.backgroundImage = 'url(' + update.value + ')';
+          }
+        }
+      });
+    });
   });
 </script>
 </body>
