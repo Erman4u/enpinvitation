@@ -41,7 +41,7 @@ export default async function AdminInvitations() {
                     {inv.url_slug}
                   </a>
                 </td>
-                <td className="px-6 py-4 text-sm text-gray-500">{inv.themes?.name}</td>
+                <td className="px-6 py-4 text-sm text-gray-500">{(inv.themes as any)?.name}</td>
                 <td className="px-6 py-4 text-sm text-gray-500">
                   <span className="truncate block max-w-[120px]" title={inv.user_id}>{inv.user_id}</span>
                 </td>

@@ -48,7 +48,7 @@ export default async function AdminDashboard() {
                 <div key={inv.id} className="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
                   <div>
                     <p className="font-medium text-gray-900">{inv.url_slug}</p>
-                    <p className="text-sm text-gray-500">{inv.themes?.name}</p>
+                    <p className="text-sm text-gray-500">{(inv.themes as any)?.name}</p>
                   </div>
                   <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                     inv.status === 'active' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'
