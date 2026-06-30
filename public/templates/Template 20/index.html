@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Iskandar & Sekar | Lumière - Undangan Digital Premium</title>
+    <meta name="description" content="Lumière — Template undangan digital pernikahan premium dengan desain editorial mewah, galeri 3D interaktif, dan fitur RSVP lengkap. Oleh EnP Digital Service.">
+    <meta name="keywords" content="undangan digital, undangan pernikahan, undangan online, template undangan, undangan digital premium, EnP Digital Service, Lumière">
+    <meta name="author" content="EnP Digital Service">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/Image/Logo-EnP.webp">
+    <link rel="apple-touch-icon" href="assets/Image/Logo-EnP.webp">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://template20.ermancah987.git workers.dev/">
+    <meta property="og:title" content="Lumière — Undangan Digital Premium | EnP Digital Service">
+    <meta property="og:description" content="Template undangan digital pernikahan premium bergaya editorial mewah. Dilengkapi galeri 3D, countdown, RSVP, dan fitur nama tamu otomatis.">
+    <meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template20.webp?raw=true">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://template20.ermancah987.workers.dev/">
+    <meta name="twitter:title" content="Lumière — Undangan Digital Premium | EnP Digital Service">
+    <meta name="twitter:description" content="Template undangan digital pernikahan premium bergaya editorial mewah. Dilengkapi galeri 3D, countdown, RSVP, dan fitur nama tamu otomatis.">
+    <meta name="twitter:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template20.webp?raw=true">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#B7955B">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Alex+Brush&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Premium Animated Background -->
+    <div class="luxury-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+    <div id="petal-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; overflow: hidden; perspective: 1200px;"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Overlay / Cover -->
+    <div id="cover" class="cover bg-light">
+        <!-- Ornaments similar to hero section -->
+        <div class="bg-ornament top-left"><i class="fa-brands fa-pagelines"></i></div>
+        <div class="bg-ornament bottom-right"><i class="fa-brands fa-pagelines"></i></div>
+
+        <div class="container text-center cover-content">
+            <div class="cover-image-wrapper" data-aos="fade-down" data-aos-duration="2000">
+                <!-- Using different image for cover to keep hero unique -->
+                <img src="assets/Image/galery4.webp" alt="Wedding Cover">
+            </div>
+            
+            <div class="cover-text-box" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                <h3 class="font-jost subtitle-text tracking-widest text-uppercase">Undangan Pernikahan</h3>
+                <h1 class="font-script title-names mt-3 mb-2">Iskandar & Sekar</h1>
+                
+                <div class="divider-elegant mx-auto my-3"></div>
+                
+                <div class="guest-info mb-4">
+                    <p class="font-jost text-xs uppercase tracking-widest text-muted">Kpd. Yth.</p>
+                    <h4 id="guest-name" class="guest-name font-serif text-2xl mt-1 text-dark">Tamu Undangan</h4>
+                </div>
+                
+                <button id="open-invitation" class="btn-primary font-jost">
+                    <i class="fa-solid fa-envelope-open-text mr-2"></i> Buka Undangan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="bg-music" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-control" class="music-control">
+        <i class="fa-solid fa-music"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="#beranda"><i class="fa-solid fa-house"></i><span>Beranda</span></a></li>
+            <li><a href="#mempelai"><i class="fa-solid fa-heart"></i><span>Mempelai</span></a></li>
+            <li><a href="#acara"><i class="fa-solid fa-calendar-check"></i><span>Acara</span></a></li>
+            <li><a href="#galeri"><i class="fa-solid fa-images"></i><span>Galeri</span></a></li>
+            <li><a href="#kado"><i class="fa-solid fa-gift"></i><span>Kado</span></a></li>
+            <li><a href="#rsvp"><i class="fa-solid fa-envelope"></i><span>RSVP</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <!-- Beranda / Hero Section -->
+        <section id="beranda" class="hero section bg-light">
+            <div class="bg-ornament top-left"><i class="fa-brands fa-pagelines"></i></div>
+            <div class="bg-ornament bottom-right"><i class="fa-brands fa-pagelines"></i></div>
+            
+            <div class="container text-center hero-content">
+                <div class="hero-image-wrapper" data-aos="fade-down" data-aos-duration="2000">
+                    <img src="assets/Image/overlay.webp" alt="Blacky & Cimeng">
+                </div>
+                <div class="hero-text-box" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                    <p class="subtitle font-jost tracking-widest text-uppercase">The Wedding Of</p>
+                    <h1 class="font-script main-title">Iskandar & Sekar</h1>
+                    <div class="divider-elegant mx-auto"></div>
+                    <p class="date font-serif text-lg">Minggu, 15 Maret 2027</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mempelai Section -->
+        <section id="mempelai" class="mempelai section bg-white text-center">
+            <div class="bg-ornament top-right"><i class="fa-solid fa-seedling"></i></div>
+            <div class="bg-ornament bottom-left"><i class="fa-solid fa-seedling"></i></div>
+
+            <div class="container" data-aos="fade-up">
+                <img src="assets/Image/bismillah.webp" alt="Bismillah" class="bismillah-img">
+                <p class="salam font-serif italic text-accent text-xl">Assalamu'alaikum Wr. Wb.</p>
+                <p class="intro-text font-jost mt-3">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
+
+                <div class="couple-row mt-5">
+                    <!-- Cimeng -->
+                    <div class="couple-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="arch-frame">
+                            <img src="assets/Image/cimeng.webp" alt="Sekar Ayu" class="couple-img">
+                        </div>
+                        <h2 class="font-script couple-name">Sekar Ayu</h2>
+                        <p class="couple-desc font-jost text-muted mt-2">Putri ke-2 Dari<br>Bapak Bambang Sugeng<br>Ibu Sri Wahyuni</p>
+                    </div>
+
+                    <div class="dan" data-aos="zoom-in" data-aos-delay="300">
+                        <h1 class="font-script text-accent text-huge">&</h1>
+                    </div>
+
+                    <!-- Blacky -->
+                    <div class="couple-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="arch-frame">
+                            <img src="assets/Image/blacky.webp" alt="Teuku Iskandar" class="couple-img">
+                        </div>
+                        <h2 class="font-script couple-name">Teuku Iskandar</h2>
+                        <p class="couple-desc font-jost text-muted mt-2">Putra ke-1 Dari<br>Teuku Muhammad<br>Cut Nyak Salma</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acara Section -->
+        <section id="acara" class="acara section bg-light">
+            <div class="bg-ornament top-left"><i class="fa-solid fa-leaf"></i></div>
+
+            <div class="container text-center" data-aos="fade-up">
+                <h3 class="section-subtitle font-jost tracking-widest text-uppercase">Acara & Waktu</h3>
+                <h2 class="font-serif section-title text-accent mb-2">Save The Date</h2>
+                <div class="divider-elegant mx-auto mb-4"></div>
+                <p class="event-date font-jost text-lg mb-2">Rabu, 15 Maret 2027</p>
+
+                <!-- Countdown -->
+                <div class="countdown mt-4 mb-4" id="countdown">
+                    <div class="cd-box"><span id="days" class="font-serif">00</span><p class="font-jost">Hari</p></div>
+                    <div class="cd-box"><span id="hours" class="font-serif">00</span><p class="font-jost">Jam</p></div>
+                    <div class="cd-box"><span id="minutes" class="font-serif">00</span><p class="font-jost">Menit</p></div>
+                    <div class="cd-box"><span id="seconds" class="font-serif">00</span><p class="font-jost">Detik</p></div>
+                </div>
+                <a href="#" target="_blank" class="btn-primary mt-2 font-jost"><i class="fa-regular fa-calendar-plus mr-2"></i> Simpan ke Kalender</a>
+
+                <div class="event-cards mt-5">
+                    <!-- Akad -->
+                    <div class="event-card elegant-panel" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-ring event-icon"></i>
+                            <h3 class="font-serif text-accent mt-3 mb-2 text-xl">Akad Nikah</h3>
+                            <div class="time-box font-jost my-3 border-top-bottom py-2">
+                                <p class="text-sm">Rabu, 15 Maret 2027</p>
+                                <p class="font-serif text-lg text-dark">08:00 – 10:00 WITA</p>
+                            </div>
+                            <p class="event-location font-jost text-muted mb-4 text-sm">RT 02, Desa Padang Jaya,<br>Kec. Kuaro, Kab. Paser, Kaltim</p>
+                            <a href="#" class="btn-outline-accent font-jost text-xs"><i class="fa-solid fa-map-location-dot mr-1"></i> Petunjuk Lokasi</a>
+                        </div>
+                    </div>
+                    <!-- Resepsi -->
+                    <div class="event-card elegant-panel" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-champagne-glasses event-icon"></i>
+                            <h3 class="font-serif text-accent mt-3 mb-2 text-xl">Resepsi Pernikahan</h3>
+                            <div class="time-box font-jost my-3 border-top-bottom py-2">
+                                <p class="text-sm">Rabu, 15 Maret 2027</p>
+                                <p class="font-serif text-lg text-dark">13:00 – Selesai</p>
+                            </div>
+                            <p class="event-location font-jost text-muted mb-4 text-sm">RT 02, Desa Padang Jaya,<br>Kec. Kuaro, Kab. Paser, Kaltim</p>
+                            <a href="#" class="btn-outline-accent font-jost text-xs"><i class="fa-solid fa-map-location-dot mr-1"></i> Petunjuk Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Journey Section -->
+        <section id="journey" class="journey section bg-white">
+            <div class="bg-ornament top-right"><i class="fa-brands fa-pagelines"></i></div>
+
+            <div class="container text-center" data-aos="fade-up">
+                <h3 class="section-subtitle font-jost tracking-widest text-uppercase">Our Journey</h3>
+                <h2 class="font-serif section-title text-accent">Kisah Cinta Kami</h2>
+                <div class="divider-elegant mx-auto mb-4"></div>
+                <p class="intro-text font-jost text-muted mb-5">Perjalanan dua hati yang dipertemukan oleh takdir-Nya</p>
+
+                <!-- Editorial Chapter Layout -->
+                <div class="journey-chapters mt-5">
+                    <div class="chapter-card" data-aos="fade-up">
+                        <span class="chapter-number font-serif">01</span>
+                        <div class="chapter-content">
+                            <h4 class="font-serif text-accent text-3xl mb-1">Januari 2026</h4>
+                            <h5 class="font-jost mb-3 text-dark uppercase tracking-widest text-xs mt-2">Awal Pertemuan</h5>
+                            <p class="font-jost text-muted text-sm leading-relaxed mt-4">Pada Januari 2026, Blacky, seekor kucing jantan penghuni gudang tua yang bulunya legam mengkilap, dipertemukan dengan Cimeng, kucing betina rumahan yang seputih salju, dalam proyek “Branding Wilayah Kekuasaan” di atap genteng Pak RT. Interaksi terbatas, hanya ngeong formal urusan batas wilayah. Tanpa Blacky ketahui, Cimeng mengagumi suaranya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chapter-card" data-aos="fade-up">
+                        <span class="chapter-number font-serif">02</span>
+                        <div class="chapter-content">
+                            <h4 class="font-serif text-accent text-3xl mb-1">Februari 2026</h4>
+                            <h5 class="font-jost mb-3 text-dark uppercase tracking-widest text-xs mt-2">Benih Cinta dalam Ujian</h5>
+                            <p class="font-jost text-muted text-sm leading-relaxed mt-4">Memasuki Februari 2026, krisis: kawanan tikus selokan menyerang dapur warga dan mengancam pasokan Whiskas Cimeng. Cimeng tampil memimpin serangan balik. Blacky terkesima oleh ketenangan Cimeng. Merasa ada kecocokan visi, Blacky beristikharah dan memulai taaruf.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chapter-card" data-aos="fade-up">
+                        <span class="chapter-number font-serif">03</span>
+                        <div class="chapter-content">
+                            <h4 class="font-serif text-accent text-3xl mb-1">Maret 2026</h4>
+                            <h5 class="font-jost mb-3 text-dark uppercase tracking-widest text-xs mt-2">Menuju Ridha Allah</h5>
+                            <p class="font-jost text-muted text-sm leading-relaxed mt-4">Taaruf berjalan penuh keikhlasan. Ujian datang ketika majikan Cimeng ragu. Di sinilah Si Hitam mempresentasikan rencana “Usaha Sosial Berbasis Pengendalian Hama” berupa barisan tikus hasil tangkapan. Presentasi ini meluluhkan hati keluarga Cimeng. Setelah mendapat restu, mereka melangkah menuju pernikahan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="galeri" class="galeri section bg-light">
+            <div class="bg-ornament bottom-left"><i class="fa-solid fa-seedling"></i></div>
+
+            <div class="container text-center" data-aos="fade-up">
+                <h3 class="section-subtitle font-jost tracking-widest text-uppercase">Our Gallery</h3>
+                <h2 class="font-serif section-title text-accent">Galeri Foto</h2>
+                <div class="divider-elegant mx-auto mb-4"></div>
+                <p class="intro-text font-jost text-muted mb-4">Pre-Wedding Moments</p>
+                
+                <!-- Swiper 3D Carousel -->
+                <div class="swiper gallery-swiper mt-2" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery-img-wrapper"><img src="assets/Image/galery1.webp" alt="Gallery"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-img-wrapper"><img src="assets/Image/galery2.webp" alt="Gallery"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-img-wrapper"><img src="assets/Image/galery3.webp" alt="Gallery"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-img-wrapper"><img src="assets/Image/galery4.webp" alt="Gallery"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-img-wrapper"><img src="assets/Image/galery5.webp" alt="Gallery"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-img-wrapper"><img src="assets/Image/overlay.webp" alt="Gallery"></div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="quote mt-5 pt-5" data-aos="fade-up">
+                    <i class="fa-solid fa-quote-left text-accent mb-4" style="font-size: 2.5rem; opacity: 0.3;"></i>
+                    <p class="font-serif italic text-lg leading-relaxed px-3 text-dark">"Dan di antara tanda-tanda kekuasaan-Nya lah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."</p>
+                    <p class="font-jost text-sm text-accent tracking-widest mt-4">- Q.S Ar Rum : 21 -</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kado Section -->
+        <section id="kado" class="kado section bg-white">
+            <div class="bg-ornament top-right"><i class="fa-solid fa-leaf"></i></div>
+
+            <div class="container text-center" data-aos="fade-up">
+                <h3 class="section-subtitle font-jost tracking-widest text-uppercase">Wedding Gift</h3>
+                <h2 class="font-serif section-title text-accent">Kirim Hadiah</h2>
+                <div class="divider-elegant mx-auto mb-4"></div>
+                <p class="intro-text font-jost text-muted mb-5">Doa restu Anda merupakan hadiah terindah bagi kami</p>
+
+                <button id="btn-show-gift" class="btn-primary font-jost mb-5"><i class="fa-solid fa-gift mr-2"></i> Tampilkan Hadiah</button>
+
+                <div id="gift-container" class="gift-cards" style="display: none;">
+                    <div class="gift-card elegant-panel" data-aos="fade-up">
+                        <i class="fa-solid fa-building-columns gift-icon text-accent"></i>
+                        <h4 class="font-serif text-xl mt-3 mb-1">Bank BRI</h4>
+                        <p class="font-jost text-muted text-sm">Nomor Rekening</p>
+                        <h3 class="rek-number font-jost text-accent text-2xl my-3 tracking-wider" id="rek1">0822 2924 3737</h3>
+                        <p class="font-jost text-dark mb-4">a.n. Teuku Iskandar</p>
+                        <button class="btn-outline-accent btn-copy font-jost text-xs" data-clipboard-text="082229243737">
+                            <i class="fa-regular fa-copy mr-1"></i> Salin Rekening
+                        </button>
+                    </div>
+
+                    <div class="gift-card elegant-panel" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-qrcode gift-icon text-accent"></i>
+                        <h4 class="font-serif text-xl mt-3 mb-1">QRIS</h4>
+                        <p class="font-jost text-muted text-sm mb-3">a.n. Sekar Ayu</p>
+                        <div class="qr-wrapper my-4 mx-auto">
+                            <img src="assets/Image/donate.webp" alt="QRIS" class="qr-img border-accent p-2 bg-white">
+                        </div>
+                    </div>
+
+                    <div class="gift-card elegant-panel" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-box-open gift-icon text-accent"></i>
+                        <h4 class="font-serif text-xl mt-3 mb-1">Kirim Kado Fisik</h4>
+                        <p class="font-jost text-muted text-sm">Alamat Pengiriman</p>
+                        <p class="address font-jost text-dark mt-3 leading-relaxed px-3">RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur 76281</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP & Wishes Section -->
+        <section id="rsvp" class="rsvp section bg-light">
+            <div class="bg-ornament top-left"><i class="fa-brands fa-pagelines"></i></div>
+
+            <div class="container text-center" data-aos="fade-up">
+                <h3 class="section-subtitle font-jost tracking-widest text-uppercase">RSVP & Wishes</h3>
+                <h2 class="font-serif section-title text-accent">Kehadiran & Ucapan</h2>
+                <div class="divider-elegant mx-auto mb-4"></div>
+                <p class="intro-text font-jost text-muted mb-5">Suatu kehormatan bagi kami atas kehadiran Anda</p>
+
+                <div class="rsvp-container elegant-panel text-left">
+                    <form id="rsvp-form" class="mb-5 border-bottom-light pb-5">
+                        <h4 class="font-serif text-accent mb-4 text-center text-2xl">Konfirmasi Kehadiran</h4>
+                        <div class="form-group">
+                            <label class="font-jost text-xs text-muted tracking-widest uppercase">Nama Lengkap</label>
+                            <input type="text" class="form-control font-jost" placeholder="Masukkan nama Anda..." required>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-jost text-xs text-muted tracking-widest uppercase">Kehadiran</label>
+                            <div class="select-wrapper">
+                                <select class="form-control font-jost">
+                                    <option>Hadir</option>
+                                    <option>Tidak Hadir</option>
+                                    <option>Masih Ragu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-jost text-xs text-muted tracking-widest uppercase">Jumlah Tamu</label>
+                            <div class="select-wrapper">
+                                <select class="form-control font-jost">
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-primary w-100 mt-3 font-jost">Kirim Konfirmasi</button>
+                    </form>
+
+                    <form id="wishes-form">
+                        <h4 class="font-serif text-accent mb-4 text-center text-2xl">Buku Tamu & Ucapan</h4>
+                        <div class="form-group">
+                            <label class="font-jost text-xs text-muted tracking-widest uppercase">Nama</label>
+                            <input type="text" id="wish-name" class="form-control font-jost" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-jost text-xs text-muted tracking-widest uppercase">Ucapan & Doa</label>
+                            <textarea id="wish-text" class="form-control font-jost" rows="4" placeholder="Tuliskan ucapan terbaik Anda..." required></textarea>
+                        </div>
+                        <button type="button" onclick="sendWhatsapp()" class="btn-primary w-100 mt-3 font-jost">
+                            <i class="fa-regular fa-paper-plane mr-2"></i> Kirim Ucapan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center bg-white">
+            <div class="container" data-aos="fade-up">
+                <h3 class="font-script text-accent text-3xl mb-4">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ</h3>
+                <p class="mb-5 font-jost text-sm text-muted leading-relaxed">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila<br>Bapak/Ibu/Saudara/i berkenan hadir dalam acara pernikahan kami.<br>Atas kehadiran dan doa restu Anda, kami ucapkan terima kasih.</p>
+                
+                <h2 class="font-script text-dark main-title mt-4" style="font-size: 3rem;">Iskandar & Sekar</h2>
+                <p class="font-jost text-accent tracking-widest mt-2 mb-5">15 · III · 2027</p>
+
+                <div class="vendor-info mt-5 pt-5 border-top-light">
+                    <img src="assets/Image/Logo-EnP.webp" alt="EnP Digital Service" class="vendor-logo mb-3">
+                    <h5 class="font-serif text-dark text-lg">EnP Digital Service</h5>
+                    <p class="font-jost text-sm text-muted">Undangan Digital Premium</p>
+                    <div class="social-links mt-4">
+                        <a href="https://enpdigitalservice.my.id" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <p class="copyright font-jost text-xs text-muted mt-4 tracking-widest uppercase">Dibuat dengan ❤️ oleh EnP Digital Service · 2027</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+</html>

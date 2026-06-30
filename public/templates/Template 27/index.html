@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Blacky & Cimeng</title>
+
+    <!-- Meta Tags & Favicon -->
+    <meta property="og:title" content="Wedding Invitation - Bima & Ayu">
+    <meta property="og:description"
+        content="Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir di acara pernikahan kami.">
+    <meta property="og:url" content="https://tema27.enpdigitalservice.my.id/">
+    <meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template27.webp?raw=true">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/Image/Logo-EnP.webp" type="image/webp">
+
+    <link href="https://fonts.googleapis.com/css2?family=Circular+Std:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OVERLAY / COVER -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <div class="album-cover-wrapper">
+                <img src="assets/Image/overlay.jpg" alt="Bima & Ayu" class="album-cover">
+            </div>
+
+            <p class="playlist-label">♪ Now Playing</p>
+            <h2 class="playlist-title">Wedding Invitation</h2>
+            <h1 class="couple-name-main">Bima & Ayu</h1>
+            <p class="date-subtitle">Rabu, 15 Maret 2027</p>
+
+            <div class="overlay-equalizer" aria-hidden="true">
+                <span class="bar" style="height:8px"></span>
+                <span class="bar" style="height:14px"></span>
+                <span class="bar" style="height:6px"></span>
+                <span class="bar" style="height:18px"></span>
+                <span class="bar" style="height:10px"></span>
+            </div>
+
+            <div class="guest-info">
+                <p>Kepada Bapak/Ibu/Saudara/i</p>
+                <h3 id="guest-name">Tamu Terhormat</h3>
+                <p class="apology">Mohon maaf apabila ada kesalahan penulisan nama dan gelar.</p>
+            </div>
+
+            <button id="open-invitation" class="btn-spotify btn-large">
+                <svg viewBox="0 0 24 24" class="icon-play">
+                    <path fill="currentColor" d="M8 5.14v14l11-7-11-7z"></path>
+                </svg>
+                <span>Open Invitation</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-content" class="main-content hidden">
+
+        <!-- HEADER / HERO -->
+        <header class="hero-section">
+            <div class="hero-bg">
+                <img src="assets/Image/hero.jpg" alt="Background">
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="hero-content">
+                <div class="verified-badge">
+                    <svg viewBox="0 0 24 24" class="icon-verified">
+                        <path fill="#1db954"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                        </path>
+                    </svg>
+                    <span>Verified Couple</span>
+                </div>
+                <p class="the-wedding">THE WEDDING OF</p>
+                <h1 class="hero-title">Bima & Ayu</h1>
+                <p class="hero-date">15 . 03 . 2027</p>
+
+                <div class="action-buttons">
+                    <button class="btn-spotify btn-play-large" id="hero-play-btn">
+                        <svg viewBox="0 0 24 24" class="icon-play">
+                            <path fill="currentColor" d="M8 5.14v14l11-7-11-7z"></path>
+                        </svg>
+                    </button>
+                    <button class="btn-outline" id="btn-save-date">Save The Date</button>
+                    <button class="btn-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- BISMILLAH & QUOTE -->
+        <section class="section quote-section lyrics-style">
+            <img src="assets/Image/bismillah.webp" alt="Bismillah" class="bismillah-img"
+                onerror="this.style.display='none'">
+            <div class="lyrics-card">
+                <p class="lyrics-text">"Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat
+                    (kebesaran Allah)."</p>
+                <p class="lyrics-source">QS. Adh-Dhariyat: 49</p>
+            </div>
+        </section>
+
+        <!-- COUPLE DETAILS -->
+        <section class="section couple-section" style="padding:0; border:none; margin-top: 16px;">
+            <!-- Groom Profile -->
+            <div class="spotify-artist-profile">
+                <div class="artist-header-bg" style="background-image: url('assets/Image/pria.jpg');">
+                    <div class="artist-header-gradient"></div>
+                    <div class="artist-header-content">
+                        <div class="verified-badge">
+                            <svg viewBox="0 0 24 24" class="icon-verified">
+                                <path fill="#3D91F4"
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                                </path>
+                            </svg>
+                            <span>Verified Groom</span>
+                        </div>
+                        <h1 class="artist-huge-name">Bima</h1>
+                        <p class="artist-listeners">Putra ke-1 Dari Bapak Hendra Kusuma & Ibu Siti Aminah</p>
+                    </div>
+                </div>
+                <div class="artist-actions">
+                    <div class="artist-action-left">
+                        <button class="btn-spotify btn-play-large" style="width: 48px; height: 48px;">
+                            <svg viewBox="0 0 24 24" class="icon-play" style="width:24px;height:24px;">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z"></path>
+                            </svg>
+                        </button>
+                        <a href="https://instagram.com/Bima" target="_blank" class="btn-outline-small"
+                            style="text-decoration:none;">Follow @Bima</a>
+                        <button class="btn-icon"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 4.5c1.38 0 2.5-1.12 2.5-2.5S13.38 0 12 0 9.5 1.12 9.5 2.5 10.62 4.5 12 4.5zm0 5c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm0 10c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z">
+                                </path>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bride Profile -->
+            <div class="spotify-artist-profile" style="margin-top: 16px;">
+                <div class="artist-header-bg"
+                    style="background-image: url('assets/Image/wanita.jpg'); background-position: center top;">
+                    <div class="artist-header-gradient"></div>
+                    <div class="artist-header-content">
+                        <div class="verified-badge">
+                            <svg viewBox="0 0 24 24" class="icon-verified">
+                                <path fill="#3D91F4"
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                                </path>
+                            </svg>
+                            <span>Verified Bride</span>
+                        </div>
+                        <h1 class="artist-huge-name">Ayu</h1>
+                        <p class="artist-listeners">Putri ke-2 Dari Bapak Budi Santoso & Ibu Ratna Wati</p>
+                    </div>
+                </div>
+                <div class="artist-actions">
+                    <div class="artist-action-left">
+                        <button class="btn-spotify btn-play-large" style="width: 48px; height: 48px;">
+                            <svg viewBox="0 0 24 24" class="icon-play" style="width:24px;height:24px;">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z"></path>
+                            </svg>
+                        </button>
+                        <a href="https://instagram.com/Ayu" target="_blank" class="btn-outline-small"
+                            style="text-decoration:none;">Follow @Ayu</a>
+                        <button class="btn-icon"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 4.5c1.38 0 2.5-1.12 2.5-2.5S13.38 0 12 0 9.5 1.12 9.5 2.5 10.62 4.5 12 4.5zm0 5c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm0 10c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z">
+                                </path>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTDOWN -->
+        <section class="section countdown-section">
+            <h2 class="section-title">Hitung Mundur</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                    <div class="progress-handle"></div>
+                </div>
+                <div class="time-labels">
+                    <span>Now Playing</span>
+                    <span>15:03</span>
+                </div>
+            </div>
+
+            <div class="countdown-grid" id="countdown">
+                <div class="cd-item">
+                    <span class="cd-number" id="days">289</span>
+                    <span class="cd-label">Hari</span>
+                </div>
+                <div class="cd-item">
+                    <span class="cd-number" id="hours">17</span>
+                    <span class="cd-label">Jam</span>
+                </div>
+                <div class="cd-item">
+                    <span class="cd-number" id="minutes">09</span>
+                    <span class="cd-label">Menit</span>
+                </div>
+                <div class="cd-item">
+                    <span class="cd-number" id="seconds">26</span>
+                    <span class="cd-label">Detik</span>
+                </div>
+            </div>
+
+            <button class="btn-outline full-width mt-4" id="btn-save-calendar">Simpan di Kalender</button>
+            <p class="text-center mt-2 text-secondary">Save The Date</p>
+        </section>
+
+        <!-- EVENT DETAILS (Momen Bahagia) -->
+        <section id="events-section" class="section events-section">
+            <h2 class="section-title">Momen Bahagia</h2>
+
+            <div class="playlist-container">
+                <!-- Akad -->
+                <div class="track-item">
+                    <div class="track-number">1</div>
+                    <div class="track-play-icon"><svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                        </svg></div>
+                    <div class="track-info">
+                        <h4 class="track-title">Akad Nikah</h4>
+                        <p class="track-artist">Rabu, 15 Maret 2027 • 10.00 WIB — Selesai</p>
+                        <p class="track-location">RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur
+                            76281</p>
+                        <p class="track-dresscode">🎵 Dress Code: Busana batik dan bersepatu.</p>
+                    </div>
+                    <div class="track-action" style="margin-top: 12px; width: 100%;">
+                        <a href="https://maps.google.com/?q=RT+02+Desa+Padang+Jaya+Kec+Kuaro+Kab+Paser+Kalimantan+Timur+76281"
+                            target="_blank" class="btn-outline-small" style="display: flex; justify-content: center; width: 100%; border-color: var(--essential-bright-accent); color: var(--essential-bright-accent);">
+                            <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; margin-right: 6px;">
+                                <path fill="currentColor"
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            Lihat Lokasi
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resepsi -->
+                <div class="track-item">
+                    <div class="track-number">2</div>
+                    <div class="track-play-icon"><svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                        </svg></div>
+                    <div class="track-info">
+                        <h4 class="track-title">Resepsi</h4>
+                        <p class="track-artist">Rabu, 15 Maret 2027 • 13.00 WIB — Selesai</p>
+                        <p class="track-location">RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur
+                            76281</p>
+                        <p class="track-dresscode">🎵 Dress Code: Busana batik dan bersepatu.</p>
+                    </div>
+                    <div class="track-action" style="margin-top: 12px; width: 100%;">
+                        <a href="https://maps.google.com/?q=RT+02+Desa+Padang+Jaya+Kec+Kuaro+Kab+Paser+Kalimantan+Timur+76281"
+                            target="_blank" class="btn-outline-small" style="display: flex; justify-content: center; width: 100%; border-color: var(--essential-bright-accent); color: var(--essential-bright-accent);">
+                            <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; margin-right: 6px;">
+                                <path fill="currentColor"
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            Lihat Lokasi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOVE STORY (Our Journey) -->
+        <section class="section podcast-section">
+            <h2 class="section-title">Kisah Cinta</h2>
+            <p class="section-subtitle">Our Journey</p>
+
+            <div class="podcast-episodes">
+                <!-- Episode 1 - always visible -->
+                <div class="episode-card">
+                    <div class="episode-cover">
+                        <img src="assets/Image/pria.jpg" alt="Januari 2026"
+                            onerror="this.src='assets/Image/placeholder.webp'">
+                        <div class="episode-play"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                            </svg></div>
+                    </div>
+                    <div class="episode-details">
+                        <h4 class="episode-title">Awal Pertemuan</h4>
+                        <p class="episode-date">Januari 2026</p>
+                        <p class="episode-desc">Bima dan Ayu pertama kali bertemu di sebuah kedai kopi lokal. Tatapan
+                            pertama yang tidak disengaja berujung pada perbincangan panjang yang hangat hingga kedai
+                            hampir tutup.</p>
+                    </div>
+                </div>
+
+                <!-- Episode 2 & 3 - hidden by default -->
+                <div id="more-episodes" class="hidden">
+                    <div class="episode-card">
+                        <div class="episode-cover">
+                            <img src="assets/Image/wanita.jpg" alt="Februari 2026"
+                                onerror="this.src='assets/Image/placeholder.webp'">
+                            <div class="episode-play"><svg viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                                </svg></div>
+                        </div>
+                        <div class="episode-details">
+                            <h4 class="episode-title">Membangun Karir Bersama</h4>
+                            <p class="episode-date">Februari 2026</p>
+                            <p class="episode-desc">Sering berdiskusi tentang impian dan karir, mereka akhirnya sadar
+                                bahwa mereka saling melengkapi. Ketenangan Ayu dan semangat Bima membuat mereka menjadi
+                                pasangan yang tak terpisahkan.</p>
+                        </div>
+                    </div>
+
+                    <div class="episode-card">
+                        <div class="episode-cover">
+                            <img src="assets/Image/hero.jpg" alt="Maret 2026"
+                                onerror="this.src='assets/Image/placeholder.webp'">
+                            <div class="episode-play"><svg viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                                </svg></div>
+                        </div>
+                        <div class="episode-details">
+                            <h4 class="episode-title">Menuju Halal</h4>
+                            <p class="episode-date">Maret 2026</p>
+                            <p class="episode-desc">Dengan penuh keyakinan dan restu dari kedua orang tua, Bima melamar
+                                Ayu dalam sebuah acara keluarga yang sederhana namun penuh makna. Kini mereka bersiap
+                                melangkah ke jenjang pernikahan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="btn-show-more" class="btn-outline full-width mt-4" style="border-color: var(--essential-bright-accent); color: var(--text-base); font-size: 0.9rem; padding: 12px; font-weight: bold;">Baca Semua Cerita Kami</button>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery-section" class="section gallery-section">
+            <h2 class="section-title">Our Memories</h2>
+            <p class="section-subtitle">Gallery</p>
+
+            <div class="gallery-featured-wrapper">
+                <img id="featured-gallery-img" src="assets/Image/gallery1.webp" alt="Featured Memory"
+                    onerror="this.src='assets/Image/gallery1.webp'">
+            </div>
+
+            <div class="gallery-carousel-wrapper" style="position: relative;">
+                <button id="gallery-prev" class="carousel-btn prev-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </button>
+                <div class="gallery-scroll-container" id="gallery-scroll">
+                <div class="album-card">
+                    <div class="album-img-wrapper">
+                        <img src="assets/Image/gallery1.webp" alt="Gallery 1"
+                            onerror="this.src='assets/Image/gallery1.webp'">
+                        <div class="album-play-btn"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                            </svg></div>
+                    </div>
+                    <h4 class="album-name">Momen Indah</h4>
+                    <p class="album-year">2026 • Album</p>
+                </div>
+                <div class="album-card">
+                    <div class="album-img-wrapper">
+                        <img src="assets/Image/gallery2.webp" alt="Slider 2"
+                            onerror="this.src='assets/Image/gallery2.webp'">
+                        <div class="album-play-btn"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                            </svg></div>
+                    </div>
+                    <h4 class="album-name">Cerita Kita</h4>
+                    <p class="album-year">2026 • Single</p>
+                </div>
+                <div class="album-card">
+                    <div class="album-img-wrapper">
+                        <img src="assets/Image/gallery3.webp" alt="Combined"
+                            onerror="this.src='assets/Image/gallery3.webp'">
+                        <div class="album-play-btn"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                            </svg></div>
+                    </div>
+                    <h4 class="album-name">Pre-Wedding</h4>
+                    <p class="album-year">2027 • EP</p>
+                </div>
+                <div class="album-card">
+                    <div class="album-img-wrapper">
+                        <img src="assets/Image/gallery4.webp" alt="Slider 1"
+                            onerror="this.src='assets/Image/gallery4.webp'">
+                        <div class="album-play-btn"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                            </svg></div>
+                    </div>
+                    <h4 class="album-name">Senyummu</h4>
+                    <p class="album-year">2027 • Single</p>
+                </div>
+                <div class="album-card">
+                    <div class="album-img-wrapper">
+                        <img src="assets/Image/gallery5.webp" alt="Gallery 2"
+                            onerror="this.src='assets/Image/gallery5.webp'">
+                        <div class="album-play-btn"><svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                            </svg></div>
+                    </div>
+                    <h4 class="album-name">Hari Bahagia</h4>
+                    <p class="album-year">2027 • Album</p>
+                </div>
+                </div>
+                <button id="gallery-next" class="carousel-btn next-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- GIFTS -->
+        <section id="gift-section" class="section gift-section">
+            <h2 class="section-title">Love Gift</h2>
+            <p class="section-subtitle">Gifts</p>
+            <div class="card-dark">
+                <p class="text-center mb-4">Doa restu Anda merupakan hadiah terindah bagi kami. Namun bagi Anda yang
+                    ingin memberikan tanda kasih, dapat melalui:</p>
+                <div class="flex-center">
+                    <button class="btn-spotify btn-full" id="btn-gift">
+                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;margin-right:8px;">
+                            <path fill="currentColor"
+                                d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 00-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z" />
+                        </svg>
+                        Kirim Hadiah
+                    </button>
+                </div>
+
+                <div id="gift-details" class="hidden mt-6">
+                    <div class="gift-item mb-4">
+                        <h4 class="mb-2">Bank BRI</h4>
+                        <p class="mb-1 text-lg font-bold" id="rek-bri">0822 2924 3737</p>
+                        <p class="text-secondary mb-4 text-sm">Atas Nama: Bima</p>
+                        <button class="btn-outline-small" onclick="copyText('rek-bri')">Salin Rekening</button>
+                    </div>
+
+                    <div class="gift-item mb-4 text-center">
+                        <h4 class="mb-4">QRIS Ayu</h4>
+                        <img src="assets/Image/donate.webp" alt="QRIS" class="qris-img mb-4"
+                            onerror="this.src='assets/Image/placeholder.webp'">
+                        <p class="text-secondary text-sm">Pindai untuk kirim tanda kasih</p>
+                    </div>
+
+                    <div class="gift-item mb-2">
+                        <h4 class="mb-2">Alamat Pengiriman</h4>
+                        <p class="mb-4 text-sm" id="alamat-pengiriman">RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser,
+                            Kalimantan Timur 76281</p>
+                        <button class="btn-outline-small" onclick="copyText('alamat-pengiriman')">Salin Alamat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP & WISHES -->
+        <section id="rsvp-section" class="section form-section">
+            <h2 class="section-title">RSVP</h2>
+            <p class="text-secondary text-sm mb-4">Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i
+                berkenan hadir.</p>
+
+            <form class="spotify-form mb-6" id="rsvp-form">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="rsvp-name" class="form-control" placeholder="Ketik nama Anda...">
+                </div>
+                <div class="form-group">
+                    <label>Konfirmasi Kehadiran</label>
+                    <select id="rsvp-status" class="form-control">
+                        <option>Hadir</option>
+                        <option>Tidak Hadir</option>
+                    </select>
+                </div>
+                <button type="button" id="btn-rsvp" class="btn-spotify btn-full mt-2">Konfirmasi</button>
+            </form>
+
+            <h2 class="section-title mt-6">Doa & Ucapan</h2>
+            <form class="spotify-form mb-4" id="wish-form">
+                <div class="form-group">
+                    <input type="text" id="wish-name" class="form-control" placeholder="Nama Anda">
+                </div>
+                <div class="form-group">
+                    <textarea id="wish-message" class="form-control" rows="3"
+                        placeholder="Tulis doa dan ucapan terbaik..."></textarea>
+                </div>
+                <button type="button" id="btn-wish" class="btn-outline btn-full">Kirim Ucapan</button>
+            </form>
+
+            <div class="comments-list">
+                <p class="text-secondary text-center italic text-sm">Belum ada ucapan...</p>
+            </div>
+        </section>
+
+        <!-- CLOSING -->
+        <section class="section closing-section text-center">
+            <h2 class="couple-name-closing">Blacky & Cimeng</h2>
+            <div class="lyrics-card mt-4 mb-4">
+                <p class="lyrics-text">"dan sesungguhnya Dialah yang menciptakan pasangan laki-laki dan perempuan,"</p>
+                <p class="lyrics-source">QS. An-Najm: 45</p>
+            </div>
+            <p class="closing-text">Alhamdulillahirabbil'alamin. Terima kasih atas perhatian dan doa restu Anda, yang
+                menjadi kebahagiaan serta kehormatan besar bagi kami. Wassalamualaikum Warahmatullahi Wabarakatuh.</p>
+
+            <p class="kami-yang-berbahagia mt-6">Kami Yang Berbahagia</p>
+            <h3 class="closing-names">Bima & Ayu</h3>
+            <p class="closing-family">Keluarga Besar Bapak Hendra Kusuma & Bapak Budi Santoso</p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="spotify-footer">
+            <img src="assets/Image/Logo-EnP.webp" alt="EnP Logo" class="enp-logo"
+                style="height: 30px; margin: 15px auto;">
+            <p class="created-with">Created with love by</p>
+            <h4 class="vendor-name">EnP Digital Service</h4>
+            <p class="vendor-contact">WA: 082229243737 | @enpdigitalservice</p>
+            <p class="copyright">Copyright © 2026 EnP Digital Service. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- MINI PLAYER -->
+    <div id="mini-player" class="mini-player hidden">
+        <div class="mini-player-progress">
+            <div class="mini-player-progress-fill" id="mini-progress-fill"></div>
+        </div>
+        <div class="mini-player-art" id="mini-art">
+            <img src="assets/Image/gallery6.webp" alt="Now Playing">
+        </div>
+        <div class="mini-player-info">
+            <p class="mini-player-title">Beautiful in White</p>
+            <p class="mini-player-artist">Bima & Ayu</p>
+        </div>
+        <div class="mini-player-controls">
+            <button class="mini-player-btn heart" id="mini-heart-btn" title="Like">
+                <svg viewBox="0 0 24 24" style="width:20px;height:20px">
+                    <path fill="currentColor"
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+            </button>
+            <button class="mini-player-btn play" id="mini-play-btn" title="Play/Pause">
+                <svg id="mini-icon-pause" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                </svg>
+                <svg id="mini-icon-play" viewBox="0 0 24 24" class="hidden">
+                    <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                </svg>
+            </button>
+            <button class="mini-player-btn" id="mini-next-btn" title="Next">
+                <svg viewBox="0 0 24 24" style="width:20px;height:20px">
+                    <path fill="currentColor" d="M8.5 12l8.5-6v12zM16 6h2v12h-2z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV BAR (Like Spotify App) -->
+    <nav class="bottom-nav" id="bottom-nav">
+        <a href="#main-content" class="nav-item active">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="#events-section" class="nav-item">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z" />
+            </svg>
+            <span>Acara</span>
+        </a>
+        <a href="#gallery-section" class="nav-item">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z" />
+            </svg>
+            <span>Gallery</span>
+        </a>
+        <a href="#gift-section" class="nav-item">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z" />
+            </svg>
+            <span>Kado</span>
+        </a>
+    </nav>
+
+    <!-- NOW PLAYING VIEW -->
+    <div id="now-playing-view" class="now-playing-view hidden">
+        <div class="np-header">
+            <button id="np-close" class="btn-icon"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                </svg></button>
+            <div class="np-header-center">
+                <p class="np-header-label">Now Playing</p>
+                <p class="np-header-playlist">Wedding Playlist</p>
+            </div>
+            <button class="btn-icon"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                </svg></button>
+        </div>
+        <div class="np-art" id="np-art">
+            <img src="assets/Image/gallery6.webp" alt="Art">
+        </div>
+        <div class="np-info">
+            <div class="np-text">
+                <h2>Beautiful in White</h2>
+                <p>Bima & Ayu</p>
+            </div>
+            <button class="np-heart-btn" id="np-heart-btn">
+                <svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+            </button>
+        </div>
+        <div class="np-progress">
+            <div class="time-labels mb-2">
+                <span id="curr-time">0:00</span>
+                <span id="total-time">0:00</span>
+            </div>
+            <div class="progress-bar" id="music-progress-bar">
+                <div class="progress-fill" id="music-progress-fill" style="width:0%"></div>
+                <div class="progress-handle"></div>
+            </div>
+        </div>
+        <div class="np-controls">
+            <button class="btn-icon"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z" />
+                </svg></button>
+            <button class="btn-icon"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+                </svg></button>
+            <button id="np-play-btn" class="np-play-btn">
+                <svg id="np-icon-play" viewBox="0 0 24 24" class="hidden">
+                    <path fill="currentColor" d="M8 5.14v14l11-7-11-7z" />
+                </svg>
+                <svg id="np-icon-pause" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                </svg>
+            </button>
+            <button class="btn-icon"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M8.5 12l8.5-6v12zM16 6h2v12h-2z" />
+                </svg></button>
+            <button class="btn-icon"><svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z" />
+                </svg></button>
+        </div>
+    </div>
+
+    <!-- AUDIO PLAYER -->
+    <audio id="bgm" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+
+</html>

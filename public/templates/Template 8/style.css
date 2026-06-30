@@ -1,0 +1,156 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+/* Timeline adjustments for mobile photos */
+@media (max-width: 767px) {
+    .mb-12.flex.justify-between.items-center.w-full { flex-direction: column !important; }
+    .mb-12.flex.justify-between.items-center.w-full > div { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
+    .left-timeline { flex-direction: column !important; }
+}
+
+body {
+    background-color: #1B263B;
+    color: #1B263B;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+.bg-texture {
+    background-color: #E0E1DD;
+    background-image: url('https://www.transparenttextures.com/patterns/rice-paper-2.png');
+}
+
+/* Reveal Animation - lightweight */
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    will-change: auto;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Wave Animation - GPU optimized */
+@keyframes move-forever {
+    0% { transform: translate3d(-90px, 0, 0); }
+    100% { transform: translate3d(85px, 0, 0); }
+}
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+    will-change: transform;
+}
+.parallax > use:nth-child(1) { animation-delay: -2s; animation-duration: 7s; }
+.parallax > use:nth-child(2) { animation-delay: -3s; animation-duration: 10s; }
+.parallax > use:nth-child(3) { animation-delay: -4s; animation-duration: 13s; }
+.parallax > use:nth-child(4) { animation-delay: -5s; animation-duration: 20s; }
+
+/* Floating Bubbles — Reduced for mobile performance */
+.particles {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.05));
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: bubble-rise var(--duration) ease-in var(--delay) infinite;
+    will-change: transform, opacity;
+}
+
+@keyframes bubble-rise {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    20% { opacity: 0.7; }
+    80% { opacity: 0.7; }
+    100% {
+        transform: translateY(-120vh) translateX(var(--sway));
+        opacity: 0;
+    }
+}
+
+/* PERFORMANCE: Pause ALL animations and timers when tab is hidden */
+body.tab-hidden .bubble,
+body.tab-hidden .particles,
+body.tab-hidden .parallax > use {
+    animation-play-state: paused !important;
+}
+
+/* Couple photo frame - unified arch style */
+.couple-frame {
+    position: relative;
+    border-radius: 50% 50% 12px 12px / 60% 60% 12px 12px;
+    overflow: hidden;
+}
+.couple-frame-border {
+    position: absolute;
+    inset: 4px;
+    border-radius: 50% 50% 10px 10px / 58% 58% 10px 10px;
+    border: 1.5px solid rgba(224, 225, 221, 0.6);
+    pointer-events: none;
+    z-index: 10;
+}
+.couple-frame-shadow {
+    position: absolute;
+    inset: 0;
+    border-radius: 50% 50% 12px 12px / 60% 60% 12px 12px;
+    box-shadow: inset 0 -30px 40px rgba(27, 38, 59, 0.35);
+    pointer-events: none;
+    z-index: 11;
+}
+
+/* Mobile-friendly safe area bottom padding for navbar */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+
+/* Typography responsive helpers */
+.section-title { font-size: clamp(2.5rem, 6vw, 4rem); }
+.section-sub   { font-size: clamp(0.65rem, 1.5vw, 0.8rem); }
+
+/* Music player pulse animation */
+@keyframes musicPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(224,225,221,0.3); }
+    50% { box-shadow: 0 0 0 8px rgba(224,225,221,0); }
+}
+.music-playing {
+    animation: musicPulse 2s ease-in-out infinite;
+}
+
+/* Floating animation for Cover Box */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+.floating {
+    animation: float 6s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* Vintage Sepia Filter */
+.vintage-filter {
+    filter: sepia(0.4) brightness(0.9) contrast(1.1);
+    transition: filter 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.group:hover .vintage-filter {
+    filter: sepia(0) brightness(1) contrast(1);
+}

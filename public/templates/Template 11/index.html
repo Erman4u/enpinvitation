@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" href="/Asset/Image/Logo-EnP.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Undangan Pernikahan Blacky & Cimeng</title>
+    <meta name="title" content="Undangan Pernikahan Blacky & Cimeng" />
+    <meta name="description" content="Momen bahagia kami. Kehadiran Anda adalah kado terindah bagi kami." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/EnPU62/Template11" />
+    <meta property="og:title" content="Undangan Pernikahan Blacky & Cimeng" />
+    <meta property="og:description" content="Momen bahagia kami. Kehadiran Anda adalah kado terindah bagi kami." />
+    <meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/Templat11.webp?raw=true" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://github.com/EnPU62/Template11" />
+    <meta property="twitter:title" content="Undangan Pernikahan Blacky & Cimeng" />
+    <meta property="twitter:description" content="Momen bahagia kami. Kehadiran Anda adalah kado terindah bagi kami." />
+    <meta property="twitter:image" content="https://github.com/Erman4u/Publish-Image/blob/main/Templat11.webp?raw=true" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+</html>

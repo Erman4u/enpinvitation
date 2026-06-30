@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Undangan Pernikahan Rizky & Lestari - 15 Maret 2027">
+    <meta name="theme-color" content="#0b1526">
+    <title>Pernikahan Rizky & Lestari</title>
+
+    <!-- Meta Open Graph (SEO & Social Sharing) -->
+    <meta property="og:title" content="Template Undangan Premium - Sapphire Elegance">
+    <meta property="og:description" content="Undangan digital premium dengan balutan tema biru elegan dan efek glassmorphism mewah. Dilengkapi fitur eksklusif 3D Coverflow dan interaksi cerdas.">
+    <meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template%2021.png?raw=true">
+    <meta property="og:url" content="https://template21.ermancah987.workers.dev/">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Template Undangan Premium - Sapphire Elegance">
+    <meta name="twitter:description" content="Undangan digital premium dengan balutan tema biru elegan dan efek glassmorphism mewah. Dilengkapi fitur eksklusif 3D Coverflow dan interaksi cerdas.">
+    <meta name="twitter:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template%2021.png?raw=true">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======================== COVER PAGE ======================== -->
+    <section id="cover">
+        <div class="cover-overlay"></div>
+        
+        <div class="cover-header">
+            <p class="cover-label">Undangan Pernikahan</p>
+            <h1 class="cover-couple-name">Rizky & Lestari</h1>
+        </div>
+
+        <div class="cover-content">
+            <div class="cover-ornament-divider">
+                <span class="ornament-line"></span>
+                <span class="ornament-diamond"></span>
+                <span class="ornament-line"></span>
+            </div>
+
+            <div class="cover-guest-info">
+                <p class="cover-guest-label">Kpd. Yth.</p>
+                <p class="cover-guest-name">Tamu Undangan</p>
+            </div>
+
+            <button id="btn-open" class="btn-open-invitation" aria-label="Buka Undangan">
+                <span class="btn-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </span>
+                Buka Undangan
+            </button>
+        </div>
+
+        <div class="cover-particles" id="cover-particles"></div>
+    </section>
+
+    <!-- ======================== BACKGROUND MUSIC ======================== -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-toggle" id="music-toggle" aria-label="Toggle Music" title="Toggle Music">
+        <svg class="music-icon-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+        </svg>
+        <svg class="music-icon-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:none;">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+            <line x1="1" y1="1" x2="23" y2="23" stroke-width="2"/>
+        </svg>
+    </button>
+
+    <!-- ======================== MAIN CONTENT ======================== -->
+    <main id="main-content">
+
+        <!-- ====== FLOATING NAVIGATION ====== -->
+        <nav class="floating-nav" id="floating-nav">
+            <a href="#beranda" class="nav-item active" data-target="beranda" title="Beranda">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span class="nav-tooltip">Beranda</span>
+            </a>
+            <a href="#mempelai" class="nav-item" data-target="mempelai" title="Mempelai">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="nav-tooltip">Mempelai</span>
+            </a>
+            <a href="#acara" class="nav-item" data-target="acara" title="Acara">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span class="nav-tooltip">Acara</span>
+            </a>
+            <a href="#galeri" class="nav-item" data-target="galeri" title="Galeri">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span class="nav-tooltip">Galeri</span>
+            </a>
+            <a href="#kado" class="nav-item" data-target="kado" title="Kado">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+                <span class="nav-tooltip">Kado</span>
+            </a>
+            <a href="#rsvp" class="nav-item" data-target="rsvp" title="RSVP">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <span class="nav-tooltip">RSVP</span>
+            </a>
+        </nav>
+
+        <!-- ====== HERO / BERANDA ====== -->
+        <section id="beranda" class="section hero-section">
+            <div class="hero-bg" style="background-image: url('assets/Image/overlay.webp');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="hero-particles"></div>
+
+            <div class="hero-content">
+                <p class="hero-subtitle scroll-animate">The Wedding Of</p>
+                <h2 class="hero-couple-name scroll-animate delay-1">Rizky & Lestari</h2>
+                <div class="hero-ornament-bottom scroll-animate delay-1">
+                    <span class="ornament-line-long"></span>
+                </div>
+                <p class="hero-date scroll-animate delay-2">Minggu, 15 Maret 2027</p>
+
+                <div class="hero-countdown scroll-animate delay-2">
+                    <div class="h-cd-item">
+                        <span class="h-cd-number countdown-days">0</span>
+                        <span class="h-cd-label">Hari</span>
+                    </div>
+                    <div class="h-cd-item">
+                        <span class="h-cd-number countdown-hours">0</span>
+                        <span class="h-cd-label">Jam</span>
+                    </div>
+                    <div class="h-cd-item">
+                        <span class="h-cd-number countdown-minutes">0</span>
+                        <span class="h-cd-label">Menit</span>
+                    </div>
+                    <div class="h-cd-item">
+                        <span class="h-cd-number countdown-seconds">0</span>
+                        <span class="h-cd-label">Detik</span>
+                    </div>
+                </div>
+                
+                <div class="hero-scroll-indicator scroll-animate delay-3">
+                    <div class="scroll-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== BISMILLAH & INTRO ====== -->
+        <section class="section bismillah-section" id="bismillah">
+            <div class="container">
+                <div class="bismillah-content scroll-animate">
+                    <img src="assets/Image/bismillah.webp" alt="Bismillah" class="bismillah-img" loading="lazy">
+                </div>
+                <p class="bismillah-salam scroll-animate delay-1">Assalamu'alaikum Wr. Wb.</p>
+                <div class="ornament-divider scroll-animate delay-1">
+                    <span class="ornament-line"></span>
+                    <span class="ornament-diamond"></span>
+                    <span class="ornament-line"></span>
+                </div>
+                <p class="bismillah-text scroll-animate delay-2">
+                    Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
+                </p>
+            </div>
+        </section>
+
+        <!-- ====== MEMPELAI ====== -->
+        <section id="mempelai" class="section mempelai-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle scroll-animate">The Bride & Groom</p>
+                    <h2 class="section-title scroll-animate delay-1">Mempelai</h2>
+                </div>
+
+                <div class="couple-container">
+                    <div class="couple-card scroll-animate delay-2">
+                        <div class="couple-photo-frame">
+                            <div class="couple-photo-ring"></div>
+                            <img src="assets/Image/wanita.jpg" alt="Lestari" class="couple-photo" loading="lazy">
+                        </div>
+                        <h3 class="couple-name">Lestari</h3>
+                        <p class="couple-role">Putri ke-2 Dari</p>
+                        <p class="couple-parent">Bapak lorem ipsum</p>
+                        <p class="couple-parent">&amp; Ibu lorem ipsum</p>
+                    </div>
+
+                    <div class="couple-separator scroll-animate delay-2">
+                        <span class="separator-ampersand">&amp;</span>
+                    </div>
+
+                    <div class="couple-card scroll-animate delay-3">
+                        <div class="couple-photo-frame">
+                            <div class="couple-photo-ring"></div>
+                            <img src="assets/Image/pria.jpg" alt="Rizky" class="couple-photo" loading="lazy">
+                        </div>
+                        <h3 class="couple-name">Rizky</h3>
+                        <p class="couple-role">Putra ke-1 Dari</p>
+                        <p class="couple-parent">Bapak lorem ipsum</p>
+                        <p class="couple-parent">&amp; Ibu lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ACARA ====== -->
+        <section id="acara" class="section acara-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle scroll-animate">Save The Date</p>
+                    <h2 class="section-title scroll-animate delay-1">Acara &amp; Waktu</h2>
+                </div>
+
+                <p class="event-main-date scroll-animate delay-2">Rabu, 15 Maret 2027</p>
+
+                <div class="countdown-wrapper scroll-animate delay-2">
+                    <div class="countdown-item">
+                        <span class="countdown-number countdown-days">0</span>
+                        <span class="countdown-label">Hari</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number countdown-hours">0</span>
+                        <span class="countdown-label">Jam</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number countdown-minutes">0</span>
+                        <span class="countdown-label">Menit</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number countdown-seconds">0</span>
+                        <span class="countdown-label">Detik</span>
+                    </div>
+                </div>
+
+                <button id="btn-calendar" class="btn-outline scroll-animate delay-3">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Simpan ke Kalender
+                </button>
+
+                <div class="events-grid">
+                    <div class="event-card scroll-animate delay-2">
+                        <div class="event-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3 class="event-name">Akad Nikah</h3>
+                        <p class="event-date">Rabu, 15 Maret 2027</p>
+                        <p class="event-time">08:00 – 10:00 WITA</p>
+                        <div class="event-divider"></div>
+                        <p class="event-location">RT 02, Desa Padang Jaya,<br>Kec. Kuaro, Kab. Paser, Kaltim</p>
+                        <a href="https://maps.google.com/?q=Desa+Padang+Jaya" target="_blank" rel="noopener" class="btn-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Petunjuk Lokasi
+                        </a>
+                    </div>
+
+                    <div class="event-card scroll-animate delay-3">
+                        <div class="event-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="event-name">Resepsi Pernikahan</h3>
+                        <p class="event-date">Rabu, 15 Maret 2027</p>
+                        <p class="event-time">13:00 – Selesai</p>
+                        <div class="event-divider"></div>
+                        <p class="event-location">RT 02, Desa Padang Jaya,<br>Kec. Kuaro, Kab. Paser, Kaltim</p>
+                        <a href="https://maps.google.com/?q=Desa+Padang+Jaya" target="_blank" rel="noopener" class="btn-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Petunjuk Lokasi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== OUR JOURNEY (Upgraded Interactive Slider) ====== -->
+        <section id="our-journey" class="section journey-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle scroll-animate">Our Journey</p>
+                    <h2 class="section-title scroll-animate delay-1">Kisah Cinta Kami</h2>
+                </div>
+                <p class="section-desc scroll-animate delay-2">Perjalanan dua hati yang dipertemukan oleh takdir-Nya</p>
+
+                <!-- New Premium Interactive Journey Layout -->
+                <div class="journey-carousel scroll-animate delay-3">
+                    <div class="journey-track" id="journey-track">
+                        
+                        <div class="journey-slide active">
+                            <div class="journey-slide-content">
+                                <div class="journey-slide-img">
+                                    <img src="assets/Image/overlay.jpg" alt="Awal Pertemuan" loading="lazy">
+                                </div>
+                                <div class="journey-slide-details">
+                                    <div class="journey-slide-date">
+                                        <span class="j-month">Jan</span>
+                                        <span class="j-year">2026</span>
+                                    </div>
+                                    <div class="journey-slide-text">
+                                        <h4 class="timeline-title">Awal Pertemuan</h4>
+                                        <p class="timeline-text">Pada Januari 2026, Rizky, seorang pemuda sederhana yang tekun bekerja, dipertemukan dengan Lestari, gadis santun yang penuh keceriaan, dalam sebuah acara silaturahmi di rumah Pak RT. Tanpa Rizky ketahui, Lestari sangat mengagumi kesantunannya.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-slide">
+                            <div class="journey-slide-content">
+                                <div class="journey-slide-img">
+                                    <img src="assets/Image/background.jpg" alt="Benih Cinta" loading="lazy">
+                                </div>
+                                <div class="journey-slide-details">
+                                    <div class="journey-slide-date">
+                                        <span class="j-month">Feb</span>
+                                        <span class="j-year">2026</span>
+                                    </div>
+                                    <div class="journey-slide-text">
+                                        <h4 class="timeline-title">Benih Cinta</h4>
+                                        <p class="timeline-text">Memasuki Februari 2026, saat desa sedang sibuk mempersiapkan kegiatan sosial, Lestari tampil sigap membantu warga tanpa pamrih. Rizky terkesima melihat ketulusan dan ketenangan Lestari dalam bekerja.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-slide">
+                            <div class="journey-slide-content">
+                                <div class="journey-slide-img">
+                                    <img src="assets/Image/gallery5.jpg" alt="Menuju Ridha Allah" loading="lazy">
+                                </div>
+                                <div class="journey-slide-details">
+                                    <div class="journey-slide-date">
+                                        <span class="j-month">Mar</span>
+                                        <span class="j-year">2026</span>
+                                    </div>
+                                    <div class="journey-slide-text">
+                                        <h4 class="timeline-title">Menuju Ridha Allah</h4>
+                                        <p class="timeline-text">Niat baik Rizky berlanjut dengan penuh keikhlasan. Ia memberanikan diri menemui orang tua Lestari. Setelah mendapat restu dari kedua belah pihak, mereka kini melangkah menuju jenjang pernikahan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="journey-controls">
+                        <button class="j-btn-prev" id="j-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                        <div class="j-indicators" id="j-dots">
+                            <span class="j-dot active"></span>
+                            <span class="j-dot"></span>
+                            <span class="j-dot"></span>
+                        </div>
+                        <button class="j-btn-next" id="j-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====== GALLERY (3D Coverflow Carousel) ====== -->
+        <section id="galeri" class="section galeri-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle scroll-animate">Our Gallery</p>
+                    <h2 class="section-title scroll-animate delay-1">Galeri Foto</h2>
+                </div>
+                <p class="section-desc scroll-animate delay-2">Pre-Wedding Moments</p>
+
+                <div class="coverflow-container scroll-animate delay-3">
+                    <div class="coverflow-wrapper" id="coverflow">
+                        <!-- Items will be positioned by JS -->
+                        <div class="coverflow-item"><img src="assets/Image/gallery1.webp" alt="Gallery 1" loading="lazy"></div>
+                        <div class="coverflow-item"><img src="assets/Image/gallery2.webp" alt="Gallery 2" loading="lazy"></div>
+                        <div class="coverflow-item"><img src="assets/Image/gallery3.webp" alt="Gallery 3" loading="lazy"></div>
+                        <div class="coverflow-item"><img src="assets/Image/gallery4.webp" alt="Gallery 4" loading="lazy"></div>
+                        <div class="coverflow-item"><img src="assets/Image/gallery5.webp" alt="Gallery 5" loading="lazy"></div>
+                        <div class="coverflow-item"><img src="assets/Image/gallery6.webp" alt="Gallery 6" loading="lazy"></div>
+                    </div>
+                    
+                    <!-- Coverflow controls -->
+                    <button class="cf-btn cf-prev" id="cf-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                    <button class="cf-btn cf-next" id="cf-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== QURAN VERSE ====== -->
+        <section class="section quran-section">
+            <div class="container">
+                <div class="quran-verse scroll-animate">
+                    <p class="quran-text">
+                        "Dan di antara tanda-tanda kekuasaan-Nya lah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."
+                    </p>
+                    <p class="quran-source">— Q.S Ar-Rum : 21 —</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== WEDDING GIFT (Click to Reveal) ====== -->
+        <section id="kado" class="section kado-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle scroll-animate">Wedding Gift</p>
+                    <h2 class="section-title scroll-animate delay-1">Kirim Hadiah</h2>
+                </div>
+                <p class="section-desc scroll-animate delay-2">Doa restu Anda merupakan hadiah terindah bagi kami</p>
+
+                <div class="gift-grid">
+                    <!-- Bank Transfer -->
+                    <div class="gift-card interactive-gift scroll-animate delay-2">
+                        <div class="gift-card-header">
+                            <div class="gift-icon-wrapper">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                            </div>
+                            <h3 class="gift-title">Bank BRI</h3>
+                            <button class="btn-reveal">Lihat Detail <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+                        </div>
+                        <div class="gift-body">
+                            <div class="gift-body-inner">
+                                <p class="gift-label">Nomor Rekening</p>
+                                <p class="gift-account">1234 5678 9012</p>
+                                <p class="gift-holder">a.n. Rizky</p>
+                                <button class="btn-copy" data-copy="082229243737" aria-label="Salin Rekening">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    Salin Rekening
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- QRIS -->
+                    <div class="gift-card interactive-gift scroll-animate delay-3">
+                        <div class="gift-card-header">
+                            <div class="gift-icon-wrapper">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="3" height="3"/><line x1="21" y1="14" x2="21" y2="21"/><line x1="14" y1="21" x2="21" y2="21"/></svg>
+                            </div>
+                            <h3 class="gift-title">QRIS LESTARI</h3>
+                            <button class="btn-reveal">Lihat QR <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+                        </div>
+                        <div class="gift-body">
+                            <div class="gift-body-inner">
+                                <div class="qris-image-wrapper">
+                                    <img src="assets/Image/donate.webp" alt="QRIS Code" class="qris-image" loading="lazy">
+                                </div>
+                                <p class="gift-holder mt-2">a.n. Lestari</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physical Gift -->
+                    <div class="gift-card interactive-gift scroll-animate delay-4">
+                        <div class="gift-card-header">
+                            <div class="gift-icon-wrapper">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h3 class="gift-title">Kirim Kado Fisik</h3>
+                            <button class="btn-reveal">Lihat Alamat <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+                        </div>
+                        <div class="gift-body">
+                            <div class="gift-body-inner">
+                                <p class="gift-label">Alamat Pengiriman</p>
+                                <p class="gift-address">RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur 76281</p>
+                                <button class="btn-copy" data-copy="RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur 76281" aria-label="Salin Alamat">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    Salin Alamat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== RSVP & WISHES ====== -->
+        <section id="rsvp" class="section rsvp-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle scroll-animate">RSVP & Wishes</p>
+                    <h2 class="section-title scroll-animate delay-1">Kehadiran &amp; Ucapan</h2>
+                </div>
+                <p class="section-desc scroll-animate delay-2">Suatu kehormatan bagi kami atas kehadiran Anda</p>
+
+                <div class="rsvp-grid">
+                    <div class="rsvp-card scroll-animate delay-2">
+                        <h3 class="rsvp-card-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+                            Konfirmasi Kehadiran
+                        </h3>
+                        <form id="rsvp-form">
+                            <div class="form-group">
+                                <label for="rsvp-nama">Nama Lengkap</label>
+                                <input type="text" id="rsvp-nama" name="nama" placeholder="Masukkan nama Anda..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="rsvp-kehadiran">Kehadiran</label>
+                                <select id="rsvp-kehadiran" name="kehadiran" required>
+                                    <option value="hadir">Hadir</option>
+                                    <option value="tidak_hadir">Tidak Hadir</option>
+                                    <option value="belum_pasti">Belum Pasti</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="rsvp-jumlah">Jumlah Tamu</label>
+                                <input type="number" id="rsvp-jumlah" name="jumlah_tamu" value="1" min="1" max="10">
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                Kirim Konfirmasi
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="rsvp-card scroll-animate delay-3">
+                        <h3 class="rsvp-card-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            Buku Tamu &amp; Ucapan
+                        </h3>
+                        <form id="wishes-form">
+                            <div class="form-group">
+                                <label for="wishes-nama">Nama</label>
+                                <input type="text" id="wishes-nama" name="nama_wishes" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="wishes-ucapan">Ucapan &amp; Doa</label>
+                                <textarea id="wishes-ucapan" name="ucapan" rows="4" placeholder="Tuliskan ucapan terbaik Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Kirim Ucapan
+                            </button>
+                        </form>
+
+                        <div class="wishes-list" id="wishes-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== CLOSING ====== -->
+        <section class="section closing-section">
+            <div class="container">
+                <div class="closing-content scroll-animate">
+                    <p class="closing-arabic">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ</p>
+                    <p class="closing-text">
+                        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila<br>
+                        Bapak/Ibu/Saudara/i berkenan hadir dalam acara pernikahan kami.<br>
+                        Atas kehadiran dan doa restu Anda, kami ucapkan terima kasih.
+                    </p>
+                    <h3 class="closing-couple-name">Rizky &amp; Lestari</h3>
+                    <p class="closing-date">15 · III · 2027</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PREMIUM FOOTER ====== -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-logo-container">
+                    <img src="assets/Image/Logo-EnP-round.webp" alt="EnP Digital Service" class="footer-logo">
+                </div>
+                
+                <div class="footer-info">
+                    <h2 class="footer-brand">EnP Digital Service</h2>
+                    <h3 class="footer-brand-sub">EnP Digital Service</h3>
+                    <p class="footer-tagline">Undangan Digital Premium</p>
+                </div>
+
+                <div class="footer-divider-elegant">
+                    <span class="fd-line"></span><span class="fd-diamond"></span><span class="fd-line"></span>
+                </div>
+                
+                <p class="footer-copyright">
+                    Dibuat dengan <span class="footer-heart">&hearts;</span> oleh EnP Digital Service &copy; 2027
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- ====== LIGHTBOX ====== -->
+    <div class="lightbox-overlay" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Tutup">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" class="lightbox-image" id="lightbox-image">
+        </div>
+    </div>
+
+    <!-- ====== TOAST ====== -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+</html>

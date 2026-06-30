@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Dimas & Ayu</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/Image/Logo-EnP-round.webp" type="image/webp">
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Undangan pernikahan digital interaktif Dimas & Ayu">
+    <meta name="author" content="EnP Digital Service">
+
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tema25.enpdigitalservice.my.id/">
+    <meta property="og:title" content="The Wedding of Dimas & Ayu">
+    <meta property="og:description"
+        content="Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir di acara pernikahan kami.">
+    <meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template25.webp?raw=true">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Cover Page -->
+    <div id="cover-page" class="cover-page active">
+        <div class="cover-wrapper">
+            <!-- Background Image explicitly set to overlay.jpg -->
+            <img src="assets/img bg/overlay.webp" alt="Cover Background" class="cover-bg-img"
+                onerror="this.src='https://placehold.co/500x1000/ebd7c8/5c473c?text=Missing+overlay.jpg'">
+
+            <!-- Top Header Text Layer -->
+
+            <div class="cover-top-text">
+                YOU ARE INVITED TO<br>THE WEDDING OF
+            </div>
+
+
+            <!-- Big Names Frame Layer -->
+            <div class="cover-names-frame">
+                <h1 class="title-font amp">Dimas&nbsp;&amp;&nbsp;Ayu</h1>
+            </div>
+
+            <!-- NEW: Guest Name Section -->
+            <div class="cover-guest-section">
+                <p class="guest-title">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+                <h2 id="guest-name-display" class="guest-name">Tamu Undangan</h2>
+            </div>
+
+            <!-- Bottom Action Button inside the oval -->
+            <button id="btn-open" class="cover-btn">
+                Buka Undangan <i class="fas fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Main Interactive Map -->
+    <div class="main-container">
+        <!-- Background Image -->
+        <img src="assets/img bg/Background.webp" alt="Wedding Background" class="bg-img">
+
+        <!-- Overlay Text Dihapus Sesuai Permintaan -->
+
+
+        <!-- Interactive Elements (layered on background) -->
+
+        <!-- Couple (center, under the arch) -->
+        <img src="assets/img bg/Pasangan-removebg-preview.png" alt="Pasangan" class="element el-couple"
+            onclick="openModal('modal-info')">
+
+        <!-- Our Story - Cake (left side) -->
+        <img src="assets/img bg/our_story-removebg-preview.png" alt="Our Story" class="element el-story"
+            onclick="openModal('modal-story')">
+
+        <!-- Our Galleries - Easel (right side) -->
+        <img src="assets/img bg/our_galery-removebg-preview.png" alt="Our Galleries" class="element el-gallery"
+            onclick="openModal('modal-gallery')">
+
+        <!-- RSVP - Kids (bottom left) -->
+        <img src="assets/img bg/rsvp-removebg-preview.png" alt="RSVP" class="element el-rsvp"
+            onclick="openModal('modal-rsvp')">
+
+        <!-- Gift - Present boxes (bottom right) -->
+        <img src="assets/img bg/gift_-removebg-preview.png" alt="Gift" class="element el-gift"
+            onclick="openModal('modal-gift')">
+
+        <!-- Signpost - Location (bottom center-left) -->
+        <img src="assets/img bg/Alamat-removebg-preview.png" alt="Lokasi" class="element el-location"
+            onclick="openModal('modal-location')">
+
+        <!-- Wedding Card - Wishes (bottom right) -->
+        <img src="assets/img bg/Wedding_card-removebg-preview.png" alt="Wedding Card" class="element el-wishes"
+            onclick="openModal('modal-wishes')">
+    </div>
+
+    <!-- Modals -->
+
+    <!-- Modal Help / Panduan -->
+    <div id="modal-help" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-help')">&times;</span>
+            <div class="modal-body text-center">
+                <h2 class="title-font">Panduan Undangan</h2>
+                <p style="margin-bottom: 20px;">Ketuk gambar-gambar yang menyala untuk melihat detail acara:</p>
+                <div style="text-align: left; display: grid; grid-template-columns: 50px 1fr; gap: 15px; align-items: center; margin-top: 10px;">
+                    <img src="assets/img bg/Pasangan-removebg-preview.png" style="width: 50px; object-fit: contain;">
+                    <p><strong>Karakter Pasangan:</strong> Profil Mempelai</p>
+                    
+                    <img src="assets/img bg/our_story-removebg-preview.png" style="width: 50px; object-fit: contain;">
+                    <p><strong>Kue Pengantin:</strong> Kisah Cinta Kami</p>
+                    
+                    <img src="assets/img bg/our_galery-removebg-preview.png" style="width: 50px; object-fit: contain;">
+                    <p><strong>Papan Kanvas:</strong> Galeri Foto</p>
+                    
+                    <img src="assets/img bg/Alamat-removebg-preview.png" style="width: 50px; object-fit: contain;">
+                    <p><strong>Papan Penunjuk Arah:</strong> Info Lokasi & Peta</p>
+                    
+                    <img src="assets/img bg/rsvp-removebg-preview.png" style="width: 50px; object-fit: contain;">
+                    <p><strong>Buku Tamu:</strong> Konfirmasi Kehadiran</p>
+                    
+                    <img src="assets/img bg/gift_-removebg-preview.png" style="width: 50px; object-fit: contain;">
+                    <p><strong>Tumpukan Kado:</strong> Hadiah Cinta (Gift)</p>
+
+                    <img src="assets/img bg/Wedding_card-removebg-preview.png" style="width: 50px; object-fit: contain;">
+                    <p><strong>Surat Undangan:</strong> Kirim Ucapan & Doa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1: Wedding Info & Profile -->
+    <div id="modal-info" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-info')">&times;</span>
+            <div class="modal-body text-center">
+                <p class="subtitle">THE WEDDING OF</p>
+                <h3 class="title-font couple-names">Dimas <span class="amp">&</span> Ayu</h3>
+                <p class="save-date">Save The Date<br>15 . 03 . 2027</p>
+
+                <div class="divider"></div>
+
+                <h4 class="title-font bismillah">Bismillah</h4>
+                <p class="quote">"Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran
+                    Allah)."<br><span>QS. Adh-Dhariyat: 49</span></p>
+
+                <div class="profile-section">
+                    <div class="profile">
+                        <img src="assets/Image/pria.jpg" alt="Dimas" class="profile-img">
+                        <h3 class="title-font">Dimas</h3>
+                        <p>Putra ke-1 Dari :<br>Bapak Budi Santoso & Ibu Ratna Sari</p>
+                        <a href="#" class="ig-link"><i class="fab fa-instagram"></i> @Dimas</a>
+                    </div>
+                    <h2 class="title-font">&</h2>
+                    <div class="profile">
+                        <img src="assets/Image/wanita.jpg" alt="Ayu" class="profile-img">
+                        <h3 class="title-font">Ayu</h3>
+                        <p>Putri ke-2 Dari :<br>Bapak Bambang Wijaya & Ibu Sri Wahyuni</p>
+                        <a href="#" class="ig-link"><i class="fab fa-instagram"></i> @Ayu</a>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <h3>Hitung Mundur</h3>
+                <div class="countdown">
+                    <div class="cd-box"><span id="cd-days">291</span><br>Hari</div>
+                    <div class="cd-box"><span id="cd-hours">19</span><br>Jam</div>
+                    <div class="cd-box"><span id="cd-minutes">42</span><br>Menit</div>
+                    <div class="cd-box"><span id="cd-seconds">53</span><br>Detik</div>
+                </div>
+                <button class="btn-secondary"><i class="fas fa-calendar-alt"></i> Simpan di Kalender</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Location -->
+    <div id="modal-location" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-location')">&times;</span>
+            <div class="modal-body text-center">
+                <h2 class="title-font">Lokasi Acara</h2>
+                <p class="subtitle">Momen Bahagia</p>
+
+                <div class="event-card" style="margin-top: 20px;">
+                    <h4>Akad Nikah</h4>
+                    <p><i class="fas fa-calendar-day"></i> Rabu, 15 Maret 2027</p>
+                    <p><i class="fas fa-clock"></i> 10.00 WIB — Selesai</p>
+                    <p><i class="fas fa-map-marker-alt"></i> RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan
+                        Timur 76281</p>
+                    <p class="dresscode"><strong>Dress Code:</strong> Busana batik dan bersepatu.</p>
+                    <button class="btn-secondary" onclick="window.open('https://maps.google.com/maps?q=Desa+Padang+Jaya,+Kec.+Kuaro,+Kab.+Paser,+Kalimantan+Timur+76281', '_blank')"><i class="fas fa-map"></i> Buka di Google Maps</button>
+                </div>
+
+                <div class="event-card">
+                    <h4>Resepsi</h4>
+                    <p><i class="fas fa-calendar-day"></i> Rabu, 15 Maret 2027</p>
+                    <p><i class="fas fa-clock"></i> 13.00 WIB — Selesai</p>
+                    <p><i class="fas fa-map-marker-alt"></i> RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan
+                        Timur 76281</p>
+                    <p class="dresscode"><strong>Dress Code:</strong> Busana batik dan bersepatu.</p>
+                    <button class="btn-secondary" onclick="window.open('https://maps.google.com/maps?q=Desa+Padang+Jaya,+Kec.+Kuaro,+Kab.+Paser,+Kalimantan+Timur+76281', '_blank')"><i class="fas fa-map"></i> Buka di Google Maps</button>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="map-container" style="margin-top: 20px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Desa%20Padang%20Jaya,%20Kec.%20Kuaro,%20Kab.%20Paser,%20Kalimantan%20Timur&t=&z=13&ie=UTF8&iwloc=&output=embed" style="display: block;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Our Story -->
+    <div id="modal-story" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-story')">&times;</span>
+            <div class="modal-body text-center">
+                <h2 class="title-font">Kisah Cinta</h2>
+                <p class="subtitle">Our Journey</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <img src="assets/Image/galery.jpg" alt="Pertemuan Pertama" class="timeline-img">
+                        <h4>Januari 2024</h4>
+                        <h5>Awal Pertemuan</h5>
+                        <p>Dimas dan Ayu pertama kali bertemu di sebuah acara reuni sahabat. Pertemuan yang sederhana
+                            namun berkesan, dimana Dimas langsung terpesona dengan kelembutan Ayu.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <img src="assets/Image/galery5.jpg" alt="Menjalin Kasih" class="timeline-img">
+                        <h4>Agustus 2025</h4>
+                        <h5>Menjalin Kasih</h5>
+                        <p>Setelah saling mengenal cukup lama, Dimas memberanikan diri untuk mengutarakan niat baiknya.
+                            Ketulusan Dimas meyakinkan Ayu untuk merajut cerita bersama dalam ikatan yang lebih serius.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <img src="assets/Image/overlay.jpg" alt="Menuju Halal" class="timeline-img">
+                        <h4>Maret 2026</h4>
+                        <h5>Menuju Halal</h5>
+                        <p>Dengan restu kedua orang tua tercinta, Dimas secara resmi melamar Ayu. Kini, mereka bersiap
+                            untuk mengikat janji suci dan mengarungi bahtera rumah tangga bersama selamanya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Gallery -->
+    <div id="modal-gallery" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-gallery')">&times;</span>
+            <div class="modal-body text-center">
+                <h2 class="title-font">Our Memories</h2>
+                <div class="carousel-container">
+                    <div class="carousel-main">
+                        <img id="main-carousel-img" src="assets/Image/galery.webp" alt="Main Gallery">
+                    </div>
+                    <div class="carousel-thumbnails">
+                        <img src="assets/Image/galery.webp" alt="Galery 1" class="c-thumb active"
+                            onclick="changeCarousel('assets/Image/galery.webp', this)">
+                        <img src="assets/Image/galery2.webp" alt="Galery 2" class="c-thumb"
+                            onclick="changeCarousel('assets/Image/galery2.webp', this)">
+                        <img src="assets/Image/galery3.webp" alt="Galery 3" class="c-thumb"
+                            onclick="changeCarousel('assets/Image/galery3.webp', this)">
+                        <img src="assets/Image/overlay.webp" alt="Galery 4" class="c-thumb"
+                            onclick="changeCarousel('assets/Image/overlay.webp', this)">
+                        <img src="assets/Image/galery5.webp" alt="Galery 5" class="c-thumb"
+                            onclick="changeCarousel('assets/Image/galery5.webp', this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Gift -->
+    <div id="modal-gift" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-gift')">&times;</span>
+            <div class="modal-body text-center">
+                <h2 class="title-font">Love Gift</h2>
+                <p>Doa restu Anda merupakan hadiah terindah bagi kami.<br>Namun bagi Anda yang ingin memberikan tanda
+                    kasih, dapat melalui:</p>
+                <div class="gift-card">
+                    <i class="fas fa-credit-card fa-3x"></i>
+                    <h4>Bank BRI</h4>
+                    <p style="font-size: 1.2rem; margin-bottom: 5px;">082229243737</p>
+                    <p>Atas Nama: Blacky</p>
+                    <button class="btn-secondary" onclick="copyText('082229243737', this)"><i class="far fa-copy"></i>
+                        Salin Rekening</button>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fas fa-qrcode fa-3x"></i>
+                    <h4>QRIS Cimeng</h4>
+                    <img src="assets/Image/donate.webp" alt="QRIS Cimeng"
+                        style="width: 100%; max-width: 200px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                    <p>Atas Nama: Cimeng</p>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fas fa-box fa-3x"></i>
+                    <h4>Kirim Kado</h4>
+                    <p>Alamat Pengiriman:</p>
+                    <p style="font-weight: normal; font-size: 0.9rem; line-height: 1.5;">RT 02, Desa Padang Jaya, Kec.
+                        Kuaro, Kab. Paser, Kalimantan Timur 76281</p>
+                    <button class="btn-secondary"
+                        onclick="copyText('RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur 76281', this)"><i
+                            class="far fa-copy"></i> Salin Alamat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: RSVP -->
+    <div id="modal-rsvp" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-rsvp')">&times;</span>
+            <div class="modal-body text-center">
+                <h2 class="title-font">RSVP</h2>
+                <p>Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+                <form class="rsvp-form">
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Ketik nama Anda..." required>
+                    <label>Konfirmasi Kehadiran</label>
+                    <select required>
+                        <option value="hadir">Hadir</option>
+                        <option value="tidak">Maaf, Tidak Bisa Hadir</option>
+                    </select>
+                    <button type="submit" class="btn-primary"><i class="fas fa-check-circle"></i> Konfirmasi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Wishes & Footer -->
+    <div id="modal-wishes" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-wishes')">&times;</span>
+            <div class="modal-body text-center">
+                <h2 class="title-font">Doa & Ucapan</h2>
+                <form class="wishes-form">
+                    <input type="text" placeholder="Nama Anda" required>
+                    <textarea placeholder="Tulis doa dan ucapan terbaik..." rows="3" required></textarea>
+                    <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Kirim Ucapan</button>
+                </form>
+
+                <div class="wishes-list">
+                    <p class="text-muted">Belum ada ucapan...</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <h2 class="title-font">Dimas & Ayu</h2>
+                <p class="quote">"dan sesungguhnya Dialah yang menciptakan pasangan laki-laki dan
+                    perempuan,"<br><span>QS. An-Najm: 45</span></p>
+                <p class="closing">Alhamdulillahirabbil'alamin. Terima kasih atas perhatian dan doa restu Anda, yang
+                    menjadi kebahagiaan serta kehormatan besar bagi kami. Wassalamualaikum Warahmatullahi Wabarakatuh.
+                </p>
+                <p>Kami Yang Berbahagia</p>
+                <h3 class="title-font">Dimas & Ayu</h3>
+                <p class="text-sm">Keluarga Besar Bapak Budi Santoso & Bapak Bambang Wijaya</p>
+
+                <div class="footer">
+                    <img src="assets/Image/Logo-EnP.webp" alt="EnP Logo" style="height: 40px;">
+                    <p>Created with love by<br><strong>EnP Digital Service</strong></p>
+                    <div class="contact-info">
+                        <span><i class="fab fa-whatsapp"></i> 082229243737</span>
+                        <span><i class="fab fa-instagram"></i> @enpdigitalservice</span>
+                    </div>
+                    <p class="copyright">Copyright &copy; 2026 EnP Digital Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bg-music" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <button id="music-toggle" class="action-btn">
+            <i class="fas fa-compact-disc fa-spin"></i>
+        </button>
+        <button id="effect-toggle" class="action-btn" title="Matikan Efek Sinar">
+            <i class="fas fa-magic"></i>
+        </button>
+        <button id="help-toggle" class="action-btn" onclick="openModal('modal-help')" title="Bantuan">
+            <i class="fas fa-question"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+
+</html>

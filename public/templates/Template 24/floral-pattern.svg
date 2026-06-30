@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <radialGradient id="rC1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffcce0"/>
+      <stop offset="55%" stop-color="#f48fb1"/>
+      <stop offset="100%" stop-color="#e91e8c"/>
+    </radialGradient>
+    <radialGradient id="rC2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="50%" stop-color="#f8bbd0"/>
+      <stop offset="100%" stop-color="#f48fb1"/>
+    </radialGradient>
+    <radialGradient id="gld" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fffde7"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ===== ROSE 1 — center (100, 100) ===== -->
+  <g transform="translate(100,100)">
+    <ellipse rx="18" ry="11" fill="url(#rC2)" transform="rotate(-35)" opacity="0.88"/>
+    <ellipse rx="18" ry="11" fill="url(#rC2)" transform="rotate(25)" opacity="0.88"/>
+    <ellipse rx="18" ry="11" fill="url(#rC2)" transform="rotate(80)" opacity="0.86"/>
+    <ellipse rx="18" ry="11" fill="url(#rC2)" transform="rotate(-90)" opacity="0.86"/>
+    <ellipse rx="14" ry="9" fill="url(#rC1)" transform="rotate(10)" opacity="0.92"/>
+    <ellipse rx="14" ry="9" fill="url(#rC1)" transform="rotate(70)" opacity="0.92"/>
+    <ellipse rx="14" ry="9" fill="url(#rC1)" transform="rotate(-55)" opacity="0.9"/>
+    <ellipse rx="10" ry="6" fill="#e91e8c" transform="rotate(0)" opacity="0.95"/>
+    <ellipse rx="10" ry="6" fill="#e91e8c" transform="rotate(60)" opacity="0.95"/>
+    <ellipse rx="10" ry="6" fill="#e91e8c" transform="rotate(-60)" opacity="0.95"/>
+    <circle r="6" fill="url(#gld)"/>
+    <circle cx="-1.5" cy="-1.5" r="2" fill="#fff9c4" opacity="0.7"/>
+    <circle r="1.2" fill="#d4af37" cy="-3"/>
+    <circle r="1" fill="#d4af37" cx="3" cy="2"/>
+    <circle r="1" fill="#d4af37" cx="-3" cy="2"/>
+  </g>
+
+  <!-- ===== ROSE 2 — top-left (20, 20) ===== -->
+  <g transform="translate(20,20)">
+    <ellipse rx="13" ry="8" fill="url(#rC2)" transform="rotate(-20)" opacity="0.85"/>
+    <ellipse rx="13" ry="8" fill="url(#rC2)" transform="rotate(45)" opacity="0.85"/>
+    <ellipse rx="13" ry="8" fill="url(#rC2)" transform="rotate(100)" opacity="0.83"/>
+    <ellipse rx="10" ry="6.5" fill="url(#rC1)" transform="rotate(15)" opacity="0.9"/>
+    <ellipse rx="10" ry="6.5" fill="url(#rC1)" transform="rotate(-50)" opacity="0.9"/>
+    <ellipse rx="7" ry="4.5" fill="#e91e8c" opacity="0.95"/>
+    <circle r="4.5" fill="url(#gld)"/>
+    <circle cx="-1" cy="-1" r="1.5" fill="#fff9c4" opacity="0.6"/>
+  </g>
+
+  <!-- ===== ROSE 3 — top-right (180, 20) ===== -->
+  <g transform="translate(180,20)">
+    <ellipse rx="12" ry="7.5" fill="url(#rC2)" transform="rotate(10)" opacity="0.85"/>
+    <ellipse rx="12" ry="7.5" fill="url(#rC2)" transform="rotate(-55)" opacity="0.85"/>
+    <ellipse rx="12" ry="7.5" fill="url(#rC2)" transform="rotate(75)" opacity="0.82"/>
+    <ellipse rx="9.5" ry="6" fill="url(#rC1)" transform="rotate(35)" opacity="0.9"/>
+    <ellipse rx="9.5" ry="6" fill="url(#rC1)" transform="rotate(-30)" opacity="0.9"/>
+    <ellipse rx="6.5" ry="4" fill="#e91e8c" opacity="0.95"/>
+    <circle r="4" fill="url(#gld)"/>
+  </g>
+
+  <!-- ===== ROSE 4 — bottom-left (20, 180) ===== -->
+  <g transform="translate(20,180)">
+    <ellipse rx="12" ry="7.5" fill="url(#rC2)" transform="rotate(-30)" opacity="0.84"/>
+    <ellipse rx="12" ry="7.5" fill="url(#rC2)" transform="rotate(40)" opacity="0.84"/>
+    <ellipse rx="12" ry="7.5" fill="url(#rC2)" transform="rotate(100)" opacity="0.82"/>
+    <ellipse rx="9" ry="5.8" fill="url(#rC1)" transform="rotate(5)" opacity="0.9"/>
+    <ellipse rx="9" ry="5.8" fill="url(#rC1)" transform="rotate(-65)" opacity="0.9"/>
+    <ellipse rx="6" ry="3.8" fill="#e91e8c" opacity="0.95"/>
+    <circle r="3.8" fill="url(#gld)"/>
+  </g>
+
+  <!-- ===== ROSE 5 — bottom-right (180, 180) ===== -->
+  <g transform="translate(180,180)">
+    <ellipse rx="13" ry="8" fill="url(#rC2)" transform="rotate(15)" opacity="0.85"/>
+    <ellipse rx="13" ry="8" fill="url(#rC2)" transform="rotate(-50)" opacity="0.85"/>
+    <ellipse rx="13" ry="8" fill="url(#rC2)" transform="rotate(80)" opacity="0.82"/>
+    <ellipse rx="10" ry="6.5" fill="url(#rC1)" transform="rotate(-10)" opacity="0.9"/>
+    <ellipse rx="10" ry="6.5" fill="url(#rC1)" transform="rotate(55)" opacity="0.9"/>
+    <ellipse rx="7" ry="4.5" fill="#e91e8c" opacity="0.95"/>
+    <circle r="4.5" fill="url(#gld)"/>
+  </g>
+
+  <!-- ===== CHERRY BLOSSOM 1 at (60, 45) ===== -->
+  <g transform="translate(60,45)">
+    <ellipse rx="6" ry="3.2" fill="#ffcce0" transform="rotate(0)" opacity="0.88"/>
+    <ellipse rx="6" ry="3.2" fill="#ffcce0" transform="rotate(72)" opacity="0.88"/>
+    <ellipse rx="6" ry="3.2" fill="#ffcce0" transform="rotate(144)" opacity="0.85"/>
+    <ellipse rx="6" ry="3.2" fill="#ffcce0" transform="rotate(216)" opacity="0.85"/>
+    <ellipse rx="6" ry="3.2" fill="#ffcce0" transform="rotate(288)" opacity="0.85"/>
+    <circle r="3" fill="url(#gld)"/>
+    <circle cx="0" cy="-1" r="1" fill="#fff9c4" opacity="0.7"/>
+  </g>
+
+  <!-- ===== CHERRY BLOSSOM 2 at (145, 55) ===== -->
+  <g transform="translate(145,55)">
+    <ellipse rx="5.5" ry="3" fill="#f8bbd0" transform="rotate(0)" opacity="0.85"/>
+    <ellipse rx="5.5" ry="3" fill="#f8bbd0" transform="rotate(72)" opacity="0.85"/>
+    <ellipse rx="5.5" ry="3" fill="#f8bbd0" transform="rotate(144)" opacity="0.82"/>
+    <ellipse rx="5.5" ry="3" fill="#f8bbd0" transform="rotate(216)" opacity="0.82"/>
+    <ellipse rx="5.5" ry="3" fill="#f8bbd0" transform="rotate(288)" opacity="0.82"/>
+    <circle r="2.8" fill="#f0d060"/>
+  </g>
+
+  <!-- ===== CHERRY BLOSSOM 3 at (55, 150) ===== -->
+  <g transform="translate(55,150)">
+    <ellipse rx="5" ry="2.8" fill="#f48fb1" transform="rotate(20)" opacity="0.82"/>
+    <ellipse rx="5" ry="2.8" fill="#f48fb1" transform="rotate(92)" opacity="0.82"/>
+    <ellipse rx="5" ry="2.8" fill="#f48fb1" transform="rotate(164)" opacity="0.8"/>
+    <ellipse rx="5" ry="2.8" fill="#f48fb1" transform="rotate(236)" opacity="0.8"/>
+    <ellipse rx="5" ry="2.8" fill="#f48fb1" transform="rotate(308)" opacity="0.8"/>
+    <circle r="2.5" fill="url(#gld)"/>
+  </g>
+
+  <!-- ===== CHERRY BLOSSOM 4 at (148, 148) ===== -->
+  <g transform="translate(148,148)">
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(-15)" opacity="0.85"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(57)" opacity="0.85"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(129)" opacity="0.82"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(201)" opacity="0.82"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(273)" opacity="0.82"/>
+    <circle r="2.8" fill="url(#gld)"/>
+  </g>
+
+  <!-- ===== STEM LINES connecting roses ===== -->
+  <path d="M 28 28 C 45 40, 55 60, 60 75 C 68 95, 80 98, 100 100" 
+        stroke="#6d9c6a" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 172 28 C 158 42, 148 58, 145 72 C 138 92, 120 98, 100 100" 
+        stroke="#6d9c6a" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 28 172 C 44 158, 55 148, 58 135 C 62 118, 78 108, 100 100" 
+        stroke="#6d9c6a" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 172 172 C 158 158, 148 148, 145 135 C 140 118, 122 108, 100 100" 
+        stroke="#6d9c6a" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- ===== SMALL LEAVES ===== -->
+  <path d="M 45 48 C 38 38, 40 28, 48 28 C 55 30, 56 42, 48 50 Z" fill="#62a45e" opacity="0.65"/>
+  <path d="M 72 70 C 65 62, 68 52, 76 53 C 82 56, 80 68, 72 70 Z" fill="#5a9e5a" opacity="0.62"/>
+  <path d="M 130 68 C 138 58, 148 60, 148 68 C 148 76, 138 78, 130 68 Z" fill="#62a45e" opacity="0.62"/>
+  <path d="M 70 130 C 62 138, 52 136, 52 128 C 52 120, 62 118, 70 130 Z" fill="#5a9e5a" opacity="0.6"/>
+  <path d="M 130 132 C 138 122, 148 124, 148 132 C 148 140, 138 142, 130 132 Z" fill="#62a45e" opacity="0.6"/>
+
+  <!-- ===== SCATTERED PETALS ===== -->
+  <ellipse cx="88" cy="55" rx="4" ry="2" fill="#f8bbd0" transform="rotate(30 88 55)" opacity="0.5"/>
+  <ellipse cx="112" cy="48" rx="3.5" ry="1.8" fill="#ffcce0" transform="rotate(-20 112 48)" opacity="0.48"/>
+  <ellipse cx="45" cy="100" rx="3.5" ry="1.8" fill="#f48fb1" transform="rotate(55 45 100)" opacity="0.48"/>
+  <ellipse cx="155" cy="100" rx="3.5" ry="1.8" fill="#f8bbd0" transform="rotate(-40 155 100)" opacity="0.48"/>
+  <ellipse cx="88" cy="148" rx="4" ry="2" fill="#ffcce0" transform="rotate(20 88 148)" opacity="0.5"/>
+  <ellipse cx="112" cy="152" rx="3.5" ry="1.8" fill="#f8bbd0" transform="rotate(-35 112 152)" opacity="0.48"/>
+  <ellipse cx="100" cy="72" rx="3" ry="1.5" fill="#f48fb1" transform="rotate(10 100 72)" opacity="0.45"/>
+  <ellipse cx="75" cy="105" rx="3" ry="1.5" fill="#ffcce0" transform="rotate(-25 75 105)" opacity="0.42"/>
+  <ellipse cx="125" cy="105" rx="3" ry="1.5" fill="#f8bbd0" transform="rotate(40 125 105)" opacity="0.42"/>
+
+  <!-- ===== MINI DOTS / BERRIES ===== -->
+  <circle cx="35" cy="95" r="2.5" fill="#e91e8c" opacity="0.45"/>
+  <circle cx="40" cy="102" r="2" fill="#f48fb1" opacity="0.4"/>
+  <circle cx="165" cy="95" r="2.5" fill="#e91e8c" opacity="0.45"/>
+  <circle cx="160" cy="102" r="2" fill="#f48fb1" opacity="0.4"/>
+  <circle cx="100" cy="35" r="2.2" fill="#d4af37" opacity="0.5"/>
+  <circle cx="100" cy="165" r="2.2" fill="#d4af37" opacity="0.5"/>
+</svg>

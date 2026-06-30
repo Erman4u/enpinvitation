@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Elegance - Undangan Pernikahan Digital</title>
+    <meta name="description" content="Sebarkan kebahagiaan pernikahan Anda dengan desain undangan digital bernuansa rustic modern yang hangat dan elegan.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://template19.ermancah987.workers.dev/">
+    <meta property="og:title" content="Rustic Elegance - Undangan Pernikahan Digital">
+    <meta property="og:description" content="Sebarkan kebahagiaan pernikahan Anda dengan desain undangan digital bernuansa rustic modern yang hangat dan elegan.">
+    <meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/Template19.webp?raw=true">
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://template19.ermancah987.workers.dev/">
+    <meta name="twitter:title" content="Rustic Elegance - Undangan Pernikahan Digital">
+    <meta name="twitter:description" content="Sebarkan kebahagiaan pernikahan Anda dengan desain undangan digital bernuansa rustic modern yang hangat dan elegan.">
+    <meta name="twitter:image" content="https://github.com/Erman4u/Publish-Image/blob/main/Template19.webp?raw=true">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS for Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/Image/Logo-EnP.webp" type="image/webp">
+</head>
+<body>
+
+    <!-- Cover Overlay -->
+    <div id="cover-overlay" class="cover-overlay">
+        <div class="cover-content rustic-frame" data-aos="zoom-in" data-aos-duration="1500">
+            <h4 class="wedding-of">Undangan Pernikahan</h4>
+            <h1 class="couple-names-cover">Ridho & Siti</h1>
+            <div class="guest-info">
+                <p>Kepada Bapak/Ibu/Saudara/i</p>
+                <h3 id="guest-name">Tamu Undangan</h3>
+            </div>
+            <button id="open-invitation" class="btn-primary mt-2">
+                <i class="fa-solid fa-envelope-open-text"></i> Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <button id="audio-control" class="audio-btn floating-btn playing">
+        <i class="fa-solid fa-compact-disc fa-spin"></i>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Main Content -->
+    <main id="main-content" class="hidden">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="overlay"></div>
+            <div class="container text-center hero-content">
+                <div class="rustic-frame glass-panel">
+                    <div class="hero-photo-wrapper" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <img src="assets/Image/overlay.webp" alt="Ridho & Siti" class="hero-photo">
+                    </div>
+                    <p class="subtitle mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">The Wedding Of</p>
+                    <div class="mt-2" style="display: flex; align-items: center; justify-content: center; gap: 15px;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                        <hr style="width: 30px; border: 0.5px solid var(--primary-light); opacity: 0.5;">
+                        <i class="fa-solid fa-leaf" style="color: var(--accent-color); font-size: 0.8rem; opacity: 0.5;"></i>
+                        <hr style="width: 30px; border: 0.5px solid var(--primary-light); opacity: 0.5;">
+                    </div>
+                    <h1 class="couple-names" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">Ridho & Siti</h1>
+                    <p class="date-hero" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">15 • 03 • 2027</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Greeting Section -->
+        <section id="greeting" class="section text-center">
+            <div class="container rustic-frame padding-40" data-aos="fade-up">
+                <img src="assets/Image/bismillah.webp" alt="Bismillah" class="bismillah-img pulse-slow">
+              
+                <p class="greeting-text">Assalamu'alaikum Wr. Wb.</p>
+                <p class="intro-text">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
+            </div>
+        </section>
+
+        <!-- Couple Section -->
+        <section id="couple" class="section text-center">
+            <div class="container">
+                <div class="couple-wrapper">
+                    <!-- Bride -->
+                    <div class="person bride" data-aos="fade-up">
+                        <div class="photo-wrapper">
+                            <div class="photo-frame">
+                                <img src="assets/Image/wanita.jpg" alt="Nyimas Siti">
+                            </div>
+                        </div>
+                        <h2 class="name">Nyimas Siti Aminah</h2>
+                        <p class="parents">Putri ke-2 Dari<br>Kiagus H. Muhammad Yusuf<br>& Masayu Hj. Rohaya</p>
+                    </div>
+
+                    <div class="and" data-aos="zoom-in"><i class="fa-solid fa-leaf"></i></div>
+
+                    <!-- Groom -->
+                    <div class="person groom" data-aos="fade-up">
+                        <div class="photo-wrapper">
+                            <div class="photo-frame">
+                                <img src="assets/Image/pria.jpg" alt="Kemas Ridho">
+                            </div>
+                        </div>
+                        <h2 class="name">Kemas Ridho Pratama</h2>
+                        <p class="parents">Putra ke-1 Dari<br>Kemas H. Abdul Somad<br>& Nyimas Hj. Fatimah</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details & Countdown -->
+        <section id="events" class="section text-center section-pattern">
+            <div class="container">
+                <div class="section-title rustic-frame padding-20 glass-panel" data-aos="fade-up">
+                    <h2>Save The Date</h2>
+                    <p class="event-date-main">Rabu, 15 Maret 2027</p>
+                </div>
+
+                <div class="countdown" id="countdown" data-aos="zoom-in">
+                    <div class="countdown-item rustic-border"><span id="days">00</span>Hari</div>
+                    <div class="countdown-item rustic-border"><span id="hours">00</span>Jam</div>
+                    <div class="countdown-item rustic-border"><span id="minutes">00</span>Menit</div>
+                    <div class="countdown-item rustic-border"><span id="seconds">00</span>Detik</div>
+                </div>
+                
+                <div data-aos="fade-up" class="mt-4">
+                    <p class="calendar-hint">*Klik tombol di bawah untuk menyimpan tanggal pada Google Kalender</p>
+                    <a href="https://calendar.google.com/" target="_blank" class="btn-secondary mt-2"><i class="fa-regular fa-calendar-plus"></i> Simpan ke Kalender</a>
+                </div>
+
+                <div class="events-container mt-5">
+                    <!-- Akad -->
+                    <div class="event-card rustic-frame glass-panel" data-aos="flip-left">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-ring event-icon pulse-slow"></i>
+                            <h3>Akad Nikah</h3>
+                            <p class="event-date">Rabu, 15 Maret 2027</p>
+                            <p class="event-time">08:00 – 10:00 WITA</p>
+                            <p class="event-address">RT 02, Desa Padang Jaya,<br>Kec. Kuaro, Kab. Paser, Kaltim</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=RT+02+Desa+Padang+Jaya+Kuaro+Paser" target="_blank" class="btn-primary btn-sm"><i class="fa-solid fa-map-location-dot"></i> Petunjuk Lokasi</a>
+                        </div>
+                    </div>
+
+                    <!-- Resepsi -->
+                    <div class="event-card rustic-frame glass-panel" data-aos="flip-right">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-champagne-glasses event-icon pulse-slow"></i>
+                            <h3>Resepsi Pernikahan</h3>
+                            <p class="event-date">Rabu, 15 Maret 2027</p>
+                            <p class="event-time">13:00 – Selesai</p>
+                            <p class="event-address">RT 02, Desa Padang Jaya,<br>Kec. Kuaro, Kab. Paser, Kaltim</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=RT+02+Desa+Padang+Jaya+Kuaro+Paser" target="_blank" class="btn-primary btn-sm"><i class="fa-solid fa-map-location-dot"></i> Petunjuk Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="mt-5" data-aos="zoom-in">
+                    <div class="rustic-frame glass-panel padding-20">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.365314051824!2d116.0354465!3d-1.8030248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df0df4447470f11%3A0x6b7588365d96200e!2sPadang%20Jaya%2C%20Kec.%20Kuaro%2C%20Kabupaten%20Paser%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1718670000000!5m2!1sid!2sid" width="100%" height="350" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Story -->
+        <section id="story" class="section">
+            <div class="container">
+                <div class="section-title text-center rustic-frame padding-20" data-aos="fade-up">
+                    <p class="subtitle">Our Journey</p>
+                    <h2>Kisah Cinta Kami</h2>
+                    <p class="story-desc">Perjalanan dua hati yang dipertemukan oleh takdir-Nya</p>
+                </div>
+
+                <div class="timeline mt-5">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Januari 2026</div>
+                        <div class="timeline-content rustic-border">
+                            <h3>1. Awal Pertemuan</h3>
+                            <p>Januari 2026 menjadi saksi pertemuan pertama Kemas Ridho dan Nyimas Siti dalam sebuah acara silaturahmi keluarga besar di Palembang. Pertemuan singkat di pelataran Benteng Kuto Besak tersebut menumbuhkan kesan mendalam yang menjadi awal perjalanan kisah cinta mereka.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Februari 2026</div>
+                        <div class="timeline-content rustic-border">
+                            <h3>2. Benih Cinta dalam Ujian</h3>
+                            <p>Seiring berjalannya waktu, komunikasi yang baik menumbuhkan rasa kecocokan. Kemas Ridho melihat sosok Nyimas Siti sebagai pribadi yang santun dan memegang teguh adat istiadat. Merasa memiliki visi yang sama untuk membangun rumah tangga, keduanya sepakat untuk menjalani proses perkenalan yang lebih serius.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Maret 2026</div>
+                        <div class="timeline-content rustic-border">
+                            <h3>3. Menuju Ridha Allah</h3>
+                            <p>Memasuki bulan Maret 2026, Kemas Ridho memantapkan niat untuk melamar. Melalui tradisi "Mutuske Kato", keluarga besar dari kedua belah pihak akhirnya memberikan restu dengan penuh keikhlasan bagi mereka untuk melangkah ke jenjang pernikahan demi meraih ridha Allah SWT.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="section text-center section-pattern">
+            <div class="container">
+                <div class="section-title rustic-frame padding-20 glass-panel" data-aos="fade-up">
+                    <p class="subtitle">Our Gallery</p>
+                    <h2>Galeri Foto</h2>
+                    <p>Pre-Wedding Moments</p>
+                </div>
+
+                <div class="gallery-grid mt-4">
+                    <div class="gallery-item rustic-border" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="assets/Image/gallery1.webp" alt="Gallery 1">
+                    </div>
+                    <div class="gallery-item rustic-border" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="assets/Image/gallery2.webp" alt="Gallery 2">
+                    </div>
+                    <div class="gallery-item rustic-border" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="assets/Image/galerry3.webp" alt="Gallery 3">
+                    </div>
+                    <div class="gallery-item rustic-border" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="assets/Image/gallery4.webp" alt="Gallery 4">
+                    </div>
+                    <div class="gallery-item rustic-border" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="assets/Image/gallery5.webp" alt="Gallery 5">
+                    </div>
+                    <div class="gallery-item rustic-border" data-aos="zoom-in" data-aos-delay="600">
+                        <img src="assets/Image/hero.webp" alt="Gallery 6">
+                    </div>
+                </div>
+
+                <div class="quran-quote mt-5 rustic-frame padding-20 glass-panel" data-aos="fade-up">
+                    <p class="quote-text">"Dan di antara tanda-tanda kekuasaan-Nya lah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."</p>
+                    <p class="quote-surah">- Q.S Ar Rum : 21 -</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gift Section -->
+        <section id="gift" class="section text-center">
+            <div class="container">
+                <div class="section-title rustic-frame padding-20" data-aos="fade-up">
+                    <p class="subtitle">Kirim Hadiah</p>
+                    <h2>Wedding Gift</h2>
+                    <p>Doa restu Anda merupakan hadiah terindah bagi kami</p>
+                </div>
+                
+                <div style="display: block; width: 100%;" data-aos="zoom-in">
+                    <button id="btn-gift" class="btn-primary mt-3"><i class="fa-solid fa-gift"></i> Kirim Hadiah</button>
+                </div>
+
+                <!-- Gift Modal / Content -->
+                <div id="gift-content" class="gift-content hidden mt-4" data-aos="fade-up">
+                    <div class="bank-card rustic-border glass-panel">
+                        <i class="fa-solid fa-money-check-dollar" style="font-size: 40px; color: var(--primary-color); margin-bottom: 10px;"></i>
+                        <h3>Nomor Rekening</h3>
+                        <p class="account-number" id="rek-ridho">0822 2924 3737</p>
+                        <p class="account-name">a.n. Kemas Ridho</p>
+                        <button class="btn-secondary btn-sm mt-3" onclick="copyText('rek-ridho')"><i class="fa-regular fa-copy"></i> Salin Rekening</button>
+                    </div>
+
+                    <div class="bank-card rustic-border glass-panel">
+                        <i class="fa-solid fa-qrcode" style="font-size: 40px; color: var(--primary-color); margin-bottom: 10px;"></i>
+                        <h3>QRIS</h3>
+                        <img src="assets/Image/donate.webp" alt="QRIS Cimeng" class="qris-img">
+                        <p class="account-name">a.n. Nyimas Siti</p>
+                    </div>
+
+                    <div class="bank-card rustic-border glass-panel">
+                        <i class="fa-solid fa-box-open" style="font-size: 40px; color: var(--primary-color); margin-bottom: 10px;"></i>
+                        <h3>Kirim Kado Fisik</h3>
+                        <p style="font-weight: 600; margin-top: 10px;">Alamat Pengiriman</p>
+                        <p style="font-size: 0.9rem;">RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur 76281</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP & Guestbook Section -->
+        <section id="rsvp" class="section text-center section-pattern">
+            <div class="container">
+                <div class="section-title rustic-frame padding-20 glass-panel" data-aos="fade-up">
+                    <p class="subtitle">Kehadiran & Ucapan</p>
+                    <h2>Suatu kehormatan bagi kami atas kehadiran Anda</h2>
+                </div>
+
+                <div class="rsvp-container mt-4">
+                    <div class="rsvp-form rustic-border glass-panel" data-aos="fade-right">
+                        <h3>Konfirmasi Kehadiran</h3>
+                        <form id="form-rsvp">
+                            <div class="form-group">
+                                <label for="nama">Nama Lengkap</label>
+                                <input type="text" id="nama" placeholder="Masukkan nama Anda..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="kehadiran">Kehadiran</label>
+                                <select id="kehadiran" required>
+                                    <option value="Hadir">Hadir</option>
+                                    <option value="Tidak Hadir">Tidak Hadir</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="jumlah">Jumlah Tamu</label>
+                                <select id="jumlah" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-primary w-100 mt-2">Kirim Konfirmasi</button>
+                        </form>
+                    </div>
+
+                    <div class="guestbook-form rustic-border glass-panel" data-aos="fade-left">
+                        <h3>Buku Tamu & Ucapan</h3>
+                        <form id="form-ucapan">
+                            <div class="form-group">
+                                <label for="nama_ucapan">Nama</label>
+                                <input type="text" id="nama_ucapan" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ucapan">Ucapan & Doa</label>
+                                <textarea id="ucapan" rows="4" placeholder="Tuliskan ucapan terbaik Anda..." required></textarea>
+                            </div>
+                            <button type="button" onclick="sendWhatsApp()" class="btn-whatsapp w-100 mt-2"><i class="fa-brands fa-whatsapp"></i> Kirim Ucapan via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Closing -->
+        <footer id="footer" class="section text-center" style="background-color: var(--primary-color); color: #fff;">
+            <div class="container rustic-frame padding-40 border-white" data-aos="fade-up">
+                <p class="arabic text-white">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ</p>
+                <p class="closing-text mt-3">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dalam acara pernikahan kami. Atas kehadiran dan doa restu Anda, kami ucapkan terima kasih.</p>
+                
+                <h2 class="couple-names mt-4 text-white" style="color: #fff;">Ridho & Siti</h2>
+                <p class="date-hero">15 • III • 2027</p>
+
+                <div class="footer-credits mt-5">
+                    <p style="font-weight: 600; margin-bottom: 10px;">Undangan Digital Premium</p>
+                    <div class="social-links">
+                        <a href="https://enpdigitalservice.my.id" target="_blank" class="text-white"><i class="fa-solid fa-globe"></i> enpdigitalservice.my.id</a>
+                        <a href="#" target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i> @enpdigitalservice</a>
+                        <a href="#" target="_blank" class="text-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                    <img src="assets/Image/Logo-EnP.webp" alt="EnP Logo" class="enp-logo mt-4" style="width: 100px; display: block; margin-left: auto; margin-right: auto;">
+                    <p class="copyright mt-2 text-white" style="color: #eee;">Dibuat dengan ❤️ oleh EnP Digital Service · 2027</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bottom Navbar -->
+        <nav class="navbar">
+            <a href="#hero" class="nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            <a href="#couple" class="nav-item"><i class="fa-solid fa-user-friends"></i><span>Mempelai</span></a>
+            <a href="#events" class="nav-item"><i class="fa-solid fa-calendar-day"></i><span>Acara</span></a>
+            <a href="#gallery" class="nav-item"><i class="fa-solid fa-images"></i><span>Galeri</span></a>
+            <a href="#rsvp" class="nav-item"><i class="fa-solid fa-paper-plane"></i><span>Pesan</span></a>
+        </nav>
+
+    </main>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+</html>

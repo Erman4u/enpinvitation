@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Undangan Pernikahan : Blacky & Cimeng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Website Undangan Pernikahan Blacky dan Cimeng Secara Online — 15 Maret 2027. Dibuat oleh EnP Digital Service." />
+	<meta name="keywords"
+		content="undangan, wedding, undangan digital, undangan online, wedding invitation, template undangan, template undangan pernikahan, undangan pernikahan, Blacky Cimeng" />
+	<meta name="author" content="EnP Digital Service" />
+
+	<!-- Facebook and Twitter integration -->
+	<!-- Open Graph -->
+	<meta property="og:title" content="The Wedding Of : Blacky & Cimeng" />
+	<meta property="og:description" content="Rabu, 15 Maret 2027. Undangan Pernikahan Digital Blacky & Cimeng" />
+	<meta property="og:keywords" content="undangan, wedding, undangan digital, undangan online, wedding invitation, template undangan, template undangan pernikahan, undangan pernikahan, Blacky Cimeng">
+	<meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template3.webp?raw=true" />
+	<meta property="og:image:secure_url" content="https://github.com/Erman4u/Publish-Image/blob/main/template3.webp?raw=true">
+	<meta property="og:image:type" content="image/webp">
+	<meta property="og:image:alt" content="Undangan Pernikahan Blacky & Cimeng">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="600">
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="id_ID">
+	<meta property="og:url" content="https://tema3.enpdigitalservice.my.id/" />
+	<meta property="og:site_name" content="Undangan Pernikahan Blacky & Cimeng">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@enpdigitalservice" />
+	<meta name="twitter:creator" content="@enpdigitalservice" />
+	<meta name="twitter:title" content="Pernikahan Blacky & Cimeng" />
+	<meta name="twitter:description" content="Undangan Pernikahan Online Blacky dan Cimeng - 15 Maret 2027." />
+	<meta name="twitter:image" content="https://github.com/Erman4u/Publish-Image/blob/main/template3.webp?raw=true" />
+	<meta name="twitter:url" content="https://tema3.enpdigitalservice.my.id//" />
+
+	<link rel="icon" href="assets/Image/Logo-EnP-round.webp">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Courgette&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!-- Clean Custom Stylesheet (No Bootstrap) -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		/* ==============================
+		   TEMA: SAGE GREEN & FLORAL
+		   Primary  : #71836A (sage green)
+		   Accent   : #5C6B56 (dark sage)
+		   Neutral  : #f5f0eb (warm cream)
+		============================== */
+
+		/* ---- OVERLAY: Buka Undangan ---- */
+		#overlay {
+			overflow-y: auto !important;
+			overflow-x: hidden !important;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			position: fixed !important;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2000;
+		}
+
+		#overlay .content {
+			width: 100%;
+			position: relative;
+			z-index: 10;
+			background: transparent !important;
+			box-shadow: none !important;
+		}
+
+		#overlay h1 {
+			color: #71836A;
+			font-size: 42px;
+			margin-bottom: 8px;
+		}
+
+		#overlay p {
+			color: #5C6B56;
+			margin-bottom: 6px;
+		}
+
+		#overlay .fh5co-heading {
+			margin-bottom: 0.8em;
+		}
+
+		#overlay h3.guest-name {
+			color: #71836A !important;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		/* ---- FOTO PROFIL (arch) ---- */
+		.couple-main {
+			width: 210px;
+			height: 280px;
+			object-fit: cover;
+			object-position: top;
+			border-radius: 105px 105px 12px 12px;
+			border: 4px solid rgba(255, 255, 255, 0.75);
+			box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+			margin: 0 auto;
+			display: block;
+		}
+
+		@media (max-width: 768px) {
+			.couple-main {
+				width: 140px;
+				height: 190px;
+				border-radius: 70px 70px 10px 10px;
+			}
+
+			#overlay h1 {
+				font-size: 30px;
+			}
+
+			#overlay h3.guest-name {
+				font-size: 16px !important;
+			}
+
+			#overlay p {
+				font-size: 13px;
+			}
+
+			#open-invitation {
+				padding: 10px 24px;
+				font-size: 15px;
+			}
+		}
+
+		/* ---- Tombol Buka Undangan ---- */
+		@keyframes pulse-btn {
+			0% {
+				transform: scale(1);
+				box-shadow: 0 0 0 0 rgba(113, 131, 106, 0.7);
+			}
+
+			70% {
+				transform: scale(1.05);
+				box-shadow: 0 0 0 14px rgba(113, 131, 106, 0);
+			}
+
+			100% {
+				transform: scale(1);
+				box-shadow: 0 0 0 0 rgba(113, 131, 106, 0);
+			}
+		}
+
+		#open-invitation {
+			animation: pulse-btn 2s infinite;
+			border-radius: 30px;
+			padding: 12px 36px;
+			font-size: 17px;
+			font-weight: 600;
+			background: linear-gradient(135deg, #71836A, #5C6B56);
+			border: none;
+			color: #fff;
+			margin-top: 12px;
+			transition: opacity 0.3s;
+		}
+
+		#open-invitation:hover {
+			opacity: 0.85;
+		}
+
+		/* ---- HERO (setelah dibuka) ---- */
+		/* (background inline so-white.png) */
+		#fh5co-header .overlay {
+			background: rgba(255, 255, 255, 0.2) !important;
+		}
+
+		/* ---- RSVP background pakai bg bunga ---- */
+		/* (background inline so-white.png) */
+
+		/* ---- BTN PRIMARY global ---- */
+		.btn-primary {
+			background: linear-gradient(135deg, #71836A, #5C6B56) !important;
+			border: none !important;
+			border-radius: 25px !important;
+			padding: 8px 22px !important;
+			color: #fff !important;
+			font-weight: 600;
+		}
+
+		.btn-primary:hover {
+			opacity: 0.87 !important;
+		}
+
+		/* ---- FLORAL ANIMATIONS & STYLING ---- */
+		@keyframes floatSway {
+			0% { transform: translateY(0px) rotate(0deg); }
+			50% { transform: translateY(-10px) rotate(3deg); }
+			100% { transform: translateY(0px) rotate(0deg); }
+		}
+
+		.flower-ornament {
+			position: absolute;
+			z-index: 1;
+			pointer-events: none;
+			animation: floatSway 20s ease-in-out infinite; /* Sangat lambat dan lembut */
+			max-width: 150px; /* Diperbesar lagi dari 100px */
+			width: 28vw;     /* Diperbesar lagi dari 20vw */
+			height: auto;
+			filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
+			will-change: transform;
+		}
+
+		/* Menyesuaikan posisi agar bunga yang lebih besar tetap rapi di pojok */
+		.flower-top-right { top: -60px; right: -60px; } 
+		.flower-top-left { top: -60px; left: -60px; }
+		.flower-bottom-right { bottom: -60px; right: -60px; }
+		.flower-bottom-left { bottom: -60px; left: -60px; }
+		.flower-middle-right { top: 30%; right: -60px; }
+		.flower-middle-left { top: 30%; left: -60px; }
+
+		/* Menambahkan sedikit delay acak pada bunga tertentu di cover */
+		.flower-bottom-left { animation-delay: -5s; }
+		.flower-top-right { animation-delay: -2s; }
+
+		@media (max-width: 768px) {
+			.flower-ornament {
+				max-width: 110px; /* Mobile diperbesar lagi dari 75px */
+				width: 35vw;      /* Mobile diperbesar lagi dari 25vw */
+			}
+			.flower-top-right { top: -25px; right: -25px; }
+			.flower-top-left { top: -25px; left: -25px; }
+			.flower-bottom-right { bottom: -15px; right: -15px; }
+			.flower-bottom-left { bottom: -15px; left: -15px; }
+		}
+
+		/* ---- OVERLAY: overlay aktif, konten di belakang tidak bisa diklik ---- */
+		#overlay~* {
+			pointer-events: none;
+		}
+
+		#overlay.hidden~* {
+			pointer-events: auto;
+		}
+
+		#overlay .guest-label {
+			font-size: 13px;
+			color: #888;
+			margin-bottom: 2px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+		}
+
+		#overlay .guest-name {
+			font-family: 'Great Vibes', cursive;
+			font-size: 30px;
+			color: #71836A;
+			margin: 0 0 12px;
+			line-height: 1.2;
+		}
+
+		/* ---- KISAH CINTA SECTION ---- */
+		#fh5co-love-story {
+			position: relative;
+			padding: var(--section-pad); /* Menggunakan variabel umum */
+		}
+
+
+		/* ---- BOTTOM NAV small text ---- */
+		.sticky-nav-bottom a {
+			font-size: 11px;
+		}
+
+		.sticky-nav-bottom i {
+			font-size: 18px !important;
+		}
+
+		/* ---- BUNUH SEMUA NAVBAR ATAS dari Bootstrap/fh5co template ---- */
+		.fh5co-nav,
+		#fh5co-nav,
+		.navbar-fixed-top,
+		.navbar-default.navbar-fixed-top,
+		#fh5co-offcanvas,
+		.js-fh5co-nav-toggle,
+		.fh5co-nav-toggle {
+			display: none !important;
+			visibility: hidden !important;
+			opacity: 0 !important;
+			height: 0 !important;
+			overflow: hidden !important;
+			pointer-events: none !important;
+		}
+
+		.navbar-header {
+			display: none !important;
+		}
+
+		.navbar-collapse {
+			display: none !important;
+		}
+
+		.navbar-form {
+			display: none !important;
+		}
+
+		/* ---- Overlay: kunci scroll body saat overlay aktif ---- */
+		body.overlay-open {
+			overflow: hidden !important;
+		}
+
+		/* Hide navigation when overlay is active */
+		body.overlay-open #bottom-nav,
+		body.overlay-open #floating-button {
+			display: none !important;
+		}
+
+		/* ---- Fix: teks overlay warna gelap agar terlihat ---- */
+		#overlay h1 {
+			color: #71836A !important;
+			font-family: 'Great Vibes', cursive;
+			font-size: 48px;
+			margin-bottom: 4px;
+		}
+
+		#overlay p,
+		#overlay .guest-label,
+		#overlay .yth-line {
+			color: #444 !important;
+		}
+
+		#overlay .guest-label {
+			font-size: 12px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-bottom: 2px;
+		}
+
+		#overlay .yth-line {
+			font-size: 14px;
+			font-weight: 600;
+			margin-bottom: 4px;
+		}
+
+		#overlay #overlay-guest-name {
+			font-family: 'Great Vibes', cursive !important;
+			font-size: 34px !important;
+			color: #71836A !important;
+			margin: 0 0 14px;
+			display: block;
+		}
+	</style>
+</head>
+
+<body class="overlay-open"> <!-- Tambahkan class overlay-open di sini agar nav langsung sembunyi -->
+
+	<div id="page">
+
+		<!-- Pindahkan Overlay ke paling atas agar menutupi semua elemen di bawahnya -->
+		<div id="overlay"
+			style="background: #fff url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat; pointer-events: auto; overflow:hidden;">
+			<img class="flower-ornament flower-top-right" src="assets/Image/background/flowers/top-right-1.svg">
+			<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-1.svg">
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 text-center fh5co-heading">
+							<img src="assets/Image/overlay.webp" alt="Blacky &amp; Cimeng" class="couple-main">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 text-center fh5co-heading">
+							<h1>Afif &amp; Titan</h1>
+							<p class="guest-label">Undangan Pernikahan</p>
+							<p class="yth-line">Yth. Bapak / Ibu / Saudara/i</p>
+							<h3 id="overlay-guest-name">Tamu Undangan</h3>
+							<p style="color:#777; font-size:13px; margin-bottom: 22px;">Kami mengundang Anda untuk hadir
+								di acara pernikahan kami.</p>
+							<button class="btn btn-primary" id="open-invitation"><i class="icon-mail"></i> Buka Undangan</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom Navbar (satu-satunya navbar) -->
+		<nav id="bottom-nav" style="position:fixed; bottom:0; left:0; right:0; z-index: 1030; margin:0; padding:0;">
+			<div class="container text-center">
+				<ul class="nav nav-tabs list-unstyled"
+					style="border-bottom: none; display: flex; justify-content: space-around; list-style-type: none; margin: 0; padding: 5px 0; overflow-x: auto; flex-wrap: nowrap;">
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-header"
+							onclick="scrollToElement('fh5co-header'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-house" style="font-size: 17px;"></i><span style="font-size:10px;">Beranda</span></a></li>
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-couple"
+							onclick="scrollToElement('fh5co-couple'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-user-group" style="font-size: 17px;"></i><span style="font-size:10px;">Mempelai</span></a></li>
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-love-story"
+							onclick="scrollToElement('fh5co-love-story'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-heart" style="font-size: 17px;"></i><span style="font-size:10px;">Kisah</span></a></li>
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-event"
+							onclick="scrollToElement('fh5co-event'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-calendar-days" style="font-size: 17px;"></i><span style="font-size:10px;">Acara</span></a></li>
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-gallery"
+							onclick="scrollToElement('fh5co-gallery'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-images" style="font-size: 17px;"></i><span style="font-size:10px;">Galeri</span></a></li>
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-health-protocol"
+							onclick="scrollToElement('fh5co-health-protocol'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-gift" style="font-size: 17px;"></i><span style="font-size:10px;">Gift</span></a></li>
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-started"
+							onclick="scrollToElement('fh5co-started'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-check-circle" style="font-size: 17px;"></i><span style="font-size:10px;">RSVP</span></a></li>
+					<li style="flex: 1; text-align: center; white-space: nowrap;"><a href="#fh5co-testimonial"
+							onclick="scrollToElement('fh5co-testimonial'); return false;"
+							style="color: #71836A; text-decoration: none; border: none; background: transparent; padding: 4px 6px; display: flex; flex-direction: column; align-items: center; gap: 2px;"><i
+								class="fa-solid fa-comment-dots" style="font-size: 17px;"></i><span style="font-size:10px;">Ucapan</span></a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		
+		<!--Floating Audio Button-->
+		<div id="floating-button" class="float" style="position: fixed; bottom: 80px; right: 20px; z-index: 1040; background: linear-gradient(135deg, #71836A, #5C6B56); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+			<div data-video="QZng89VxKWg" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
+			<i class="fa-solid fa-music" style="color: white; font-size: 18px;"></i>
+		</div>
+
+		<div id="fh5co-header"
+			style="background: url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat; position: relative;">
+			<div class="container">
+				<img class="flower-ornament flower-top-right" src="assets/Image/background/flowers/top-right-1.svg">
+				<img class="flower-ornament flower-top-left" src="assets/Image/background/flowers/top-left-1.svg">
+				<img class="flower-ornament flower-bottom-right" src="assets/Image/background/flowers/bottom-right-1.svg">
+				<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-1.svg">
+				<div class="row">
+					<div class="col-md-8 text-center animate-box">
+						<h2>The Wedding Of</h2>
+						<img src="assets/Image/hero.webp" alt="Blacky & Cimeng" class="couple-main" style="margin-top: 10px; margin-bottom: 20px;">
+						<h1>Afif & Titan</h1>
+						<p style="color: #71836A; text-transform: none; letter-spacing: 0;">Kami berharap Anda menjadi bagian dari hari istimewa kami!</p>
+						<div class="simply-countdown simply-countdown-wedding"></div>
+						<p style="margin-top: 25px;">
+							<a href="javascript:void(0)" onclick="saveToCalendar()" class="btn btn-primary btn-sm">Save the date</a><br>
+							<i style="font-size: 15px">*Klik tombol ini untuk menyimpan tanggal pada google kalender</i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-couple"
+			style="background: url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat ">
+			<div class="container">
+				<img class="flower-ornament flower-top-right" src="assets/Image/background/flowers/top-right-3.svg">
+				<img class="flower-ornament flower-top-left" src="assets/Image/background/flowers/top-left-2.svg">
+				<img class="flower-ornament flower-middle-right" src="assets/Image/background/flowers/right-1.svg">
+				<img class="flower-ornament flower-middle-left" src="assets/Image/background/flowers/left-1.svg">
+				<!-- EXTRA FLOWERS -->
+				<img class="flower-ornament flower-bottom-right" src="assets/Image/background/flowers/bottom-right-2.svg">
+				<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-3.svg">
+
+				<div class="row">
+					<div class="col-md-8 text-center fh5co-heading animate-box">
+						<p style="font-size: 34px; color: #71836A; margin-bottom: 20px; font-weight: normal; line-height: 1.5;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+						<h2>Assalamu'alaikum Wr. Wb.</h2>
+						<p style="color: #71836A">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
+							serta Kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
+					</div>
+				</div>
+				<div class="couple-wrap animate-box">
+					<div class="couple-half">
+						<div class="groom">
+							<div class="photo-frame">
+								<img src="assets/Image/background/flowers/top-right-1.svg" class="frame-flower-top-right">
+								<img src="assets/Image/background/flowers/bottom-left-1.svg" class="frame-flower-bottom-left">
+							</div>
+							<img src="assets/Image/wanita.jpg" alt="Cimeng" class="img-responsive profile-pic" loading="lazy">
+						</div>
+						<div class="desc-groom">
+							<h3>Titan</h3>
+							<p><span style="color: #71836A">Putri ke-2 Dari :</span><br>
+								<span class="parents-font">Bapak Sapto</span>
+								<br>
+								<span class="parents-font">Ibu Nia</span>
+							</p>
+							<div id="social-media-bride">
+								<ul class="fh5co-social-icons">
+									<li><a target="_blank" href="https://www.instagram.com/enpdigitalservice/"><i class="fa-brands fa-instagram"></i></a></li>
+									<li><a target="_blank" href="https://www.facebook.com/share/1LVoY94UpH/"><i class="fa-brands fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<p class="heart text-center"><i class="icon-heart2"></i></p>
+					<div class="couple-half">
+						<div class="bride">
+							<div class="photo-frame">
+								<img src="assets/Image/background/flowers/top-right-1.svg" class="frame-flower-top-right">
+								<img src="assets/Image/background/flowers/bottom-left-1.svg" class="frame-flower-bottom-left">
+							</div>
+							<img src="assets/Image/pria.jpg" alt="Blacky" class="img-responsive profile-pic" loading="lazy">
+						</div>
+						<div class="desc-bride">
+							<h3>Afif</h3>
+							<p><span style="color: #71836A">Putra ke-1 Dari :</span><br>
+								<span class="parents-font">Bapak Agus</span>
+								<br>
+								<span class="parents-font">Ibu Nanda</span>
+							</p>
+							<div id="social-media-groom">
+								<ul class="fh5co-social-icons">
+									<li><a target="_blank" href="https://www.instagram.com/enpdigitalservice/"><i class="fa-brands fa-instagram"></i></a></li>
+									<li><a target="_blank" href="https://www.facebook.com/share/1LVoY94UpH/"><i class="fa-brands fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ===== KISAH CINTA SECTION ===== -->
+		<div id="fh5co-love-story"
+			style="background: url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat; position:relative; border-top: 1px solid #f2f2f2;">
+			<img class="flower-ornament flower-top-right" style="opacity: 0.8;" src="assets/Image/background/flowers/top-right-3.svg">
+			<img class="flower-ornament flower-top-left" style="opacity: 0.8;" src="assets/Image/background/flowers/top-left-2.svg">
+			<img class="flower-ornament flower-bottom-left" style="opacity: 0.8;" src="assets/Image/background/flowers/bottom-left-3.svg">
+			<img class="flower-ornament flower-bottom-right" style="opacity: 0.8; height:150px" src="assets/Image/background/flowers/bottom-right-2.svg">
+			<img class="flower-ornament flower-middle-left" style="opacity: 0.8;" src="assets/Image/background/flowers/left-1.svg">
+			<img class="flower-ornament flower-middle-right" style="opacity: 0.8;" src="assets/Image/background/flowers/right-1.svg">
+			<div class="container" style="position:relative; z-index:1;">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2 style="color:#71836A;">Kisah Cinta Kami</h2>
+						<p style="color:#5C6B56;">Perjalanan dua hati yang dipertemukan oleh takdir-Nya</p>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="love-story-timeline">
+
+							<!-- Bab 1 -->
+							<div class="love-story-item">
+								<div class="love-story-num">1</div>
+								<div class="love-story-body">
+									<img src="assets/Image/gallery1.webp" class="story-img" alt="Pertemuan Pertama">
+									<h4>Pertemuan Pertama</h4>
+									<p>Awal 2026 menjadi saksi pertemuan pertama kami yang sederhana. Berawal dari sapaan formal, benih kekaguman mulai tumbuh dan menjadi awal perjalanan indah kami.</p>
+								</div>
+							</div>
+
+							<!-- Bab 2 -->
+							<div class="love-story-item">
+								<div class="love-story-num">2</div>
+								<div class="love-story-body">
+									<img src="assets/Image/overlay.webp" class="story-img" alt="Melewati Ujian">
+									<h4>Melewati Ujian</h4>
+									<p>Krisis yang hadir justru menjadi jalan bagi kami untuk saling mengenal lebih dalam. Ketenangan dan ketulusan hati meyakinkan kami bahwa kita adalah pasangan yang tepat.</p>
+								</div>
+							</div>
+
+							<!-- Bab 3 -->
+							<div class="love-story-item" style="margin-bottom:0;">
+								<div class="love-story-num">3</div>
+								<div class="love-story-body">
+									<img src="assets/Image/gallery5.webp" class="story-img" alt="Ikatan Suci">
+									<h4>Langkah Menuju Ridha-Nya</h4>
+									<p>Dengan niat ibadah, restu keluarga pun menyertai langkah kami. Lamaran sederhana di taman menjadi bukti komitmen kami untuk membangun masa depan bersama.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ===== END KISAH CINTA ===== -->
+
+		<div id="fh5co-event" class="fh5co-bg" style="position: relative; padding: 70px 0;">
+			<!-- EXTRA FLOWERS -->
+			<img class="flower-ornament flower-top-left" src="assets/Image/background/flowers/top-left-2.svg">
+			<img class="flower-ornament flower-top-right" src="assets/Image/background/flowers/top-right-3.svg">
+			<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-3.svg">
+			<img class="flower-ornament flower-bottom-right" src="assets/Image/background/flowers/bottom-right-1.svg">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 text-center fh5co-heading animate-box">
+						<h2>Save The Date</h2>
+						<p style="color:#5C6B56;">Catat tanggal bahagia kami di kalender Anda</p>
+						<a href="javascript:void(0)" onclick="saveToCalendar()" class="btn btn-primary btn-sm" style="margin-top:4px;">
+							<i class="icon-calendar"></i> Simpan ke Kalender
+						</a>
+					</div>
+				</div>
+
+				<div class="row" style="margin-top: 30px; gap: 0;">
+					<!-- Akad -->
+					<div class="col-md-6 col-sm-6 text-center animate-box" style="padding: 0 12px;">
+						<div class="event-wrap">
+							<div class="event-badge" style="display:inline-block; background:rgba(113,131,106,0.1); border-radius:30px; padding:4px 16px; font-size:12px; color:#71836A; letter-spacing:1px; text-transform:uppercase; margin-bottom:12px;">Akad</div>
+							<h3>Akad Nikah</h3>
+							<div class="event-info-row" style="display:flex; justify-content:center; gap:24px; margin:16px 0;">
+								<div style="text-align:center;">
+									<i class="icon-clock" style="font-size:22px; color:#71836A; display:block; margin-bottom:4px;"></i>
+									<span style="font-size:13px; color:#888;">Waktu</span><br>
+									<strong style="color:#444;">08:00 – 10:00</strong>
+								</div>
+								<div style="width:1px; background:rgba(113,131,106,0.2);"></div>
+								<div style="text-align:center;">
+									<i class="icon-calendar" style="font-size:22px; color:#71836A; display:block; margin-bottom:4px;"></i>
+									<span style="font-size:13px; color:#888;">Tanggal</span><br>
+									<strong class="tanggal">15 Maret 2027</strong>
+								</div>
+							</div>
+							<p style="font-family: 'Courgette', Arial, serif; font-size:14px; color:#666; line-height:1.6; border-top:1px solid rgba(113,131,106,0.1); padding-top:14px;">RT 02, Desa Padang Jaya, Kec. Kuaro,<br>Kab. Paser, Kalimantan Timur 76281</p>
+							<a href="https://maps.app.goo.gl/o1WujU5SAPhaLp1u6" target="_blank" class="btn btn-primary" style="margin-top:14px;"><i class="icon-map"></i> Penunjuk Lokasi</a>
+						</div>
+					</div>
+
+					<!-- Resepsi -->
+					<div class="col-md-6 col-sm-6 text-center animate-box" style="padding: 0 12px;">
+						<div class="event-wrap">
+							<div class="event-badge" style="display:inline-block; background:rgba(113,131,106,0.1); border-radius:30px; padding:4px 16px; font-size:12px; color:#71836A; letter-spacing:1px; text-transform:uppercase; margin-bottom:12px;">Resepsi</div>
+							<h3>Resepsi Pernikahan</h3>
+							<div class="event-info-row" style="display:flex; justify-content:center; gap:24px; margin:16px 0;">
+								<div style="text-align:center;">
+									<i class="icon-clock" style="font-size:22px; color:#71836A; display:block; margin-bottom:4px;"></i>
+									<span style="font-size:13px; color:#888;">Waktu</span><br>
+									<strong style="color:#444;">13:00 – Selesai</strong>
+								</div>
+								<div style="width:1px; background:rgba(113,131,106,0.2);"></div>
+								<div style="text-align:center;">
+									<i class="icon-calendar" style="font-size:22px; color:#71836A; display:block; margin-bottom:4px;"></i>
+									<span style="font-size:13px; color:#888;">Tanggal</span><br>
+									<strong class="tanggal">15 Maret 2027</strong>
+								</div>
+							</div>
+							<p style="font-family: 'Courgette', Arial, serif; font-size:14px; color:#666; line-height:1.6; border-top:1px solid rgba(113,131,106,0.1); padding-top:14px;">RT 02, Desa Padang Jaya, Kec. Kuaro,<br>Kab. Paser, Kalimantan Timur 76281</p>
+							<a href="https://maps.app.goo.gl/o1WujU5SAPhaLp1u6" target="_blank" class="btn btn-primary" style="margin-top:14px;"><i class="icon-map"></i> Penunjuk Lokasi</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<div id="fh5co-gallery"
+		style="background: url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat ">
+		<img class="flower-ornament flower-top-left" src="assets/Image/background/flowers/top-2.svg">
+		<img class="flower-ornament flower-top-right" src="assets/Image/background/flowers/top-right-3.svg">
+		<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-3.svg">
+		<img class="flower-ornament flower-bottom-right" src="assets/Image/background/flowers/bottom-2.svg">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 text-center fh5co-heading animate-box">
+					<h2>Galeri Foto</h2>
+					<h3 style="color: #71836A">Pre-Wedding</h3>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md animate-box">
+				<div class="col-md-12">
+					<div id="inline-gallery-container" class="inline-gallery-container"
+						style="position: relative; height: 500px">
+					</div>
+					<!-- Foto galeri dari folder images/gallery/ -->
+					<div id="gallery-grid">
+						<a href="assets/Image/gallery1.webp" class="gallery-link">
+							<img src="assets/Image/gallery1.webp" loading="lazy">
+						</a>
+						<a href="assets/Image/gallery2.webp" class="gallery-link">
+							<img src="assets/Image/gallery2.webp" loading="lazy">
+						</a>
+						<a href="assets/Image/gallery3.webp" class="gallery-link">
+							<img src="assets/Image/gallery3.webp" loading="lazy">
+						</a>
+						<a href="assets/Image/gallery4.webp" class="gallery-link">
+							<img src="assets/Image/gallery4.webp" loading="lazy">
+						</a>
+						<a href="assets/Image/gallery5.webp" class="gallery-link">
+							<img src="assets/Image/gallery5.webp" loading="lazy">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-ayat" style="position: relative;">
+		<img height="400" width="100%" style="position: absolute; bottom: -175px" src="assets/Image/background/wave-down.svg">
+		<img class="flower-ornament flower-top-right" style="top: -50px;" src="assets/Image/background/flowers/top-right-3.svg">
+
+		<div class="container">
+			<div class="ayat-content animate-box">
+				Dan di antara tanda-tanda kekuasaan-Nya lah Dia menciptakan untukmu istri-istri dari jenismu
+				sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
+				kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum
+				yang berfikir.
+				<br>
+				<b>- Q.S Ar Rum : 21 -</b>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-health-protocol" style="position: relative;">
+		<!-- EXTRA FLOWERS -->
+		<img class="flower-ornament flower-top-left" src="assets/Image/background/flowers/top-left-1.svg">
+		<img class="flower-ornament flower-middle-right" src="assets/Image/background/flowers/right-1.svg">
+		<img class="flower-ornament flower-top-right" src="assets/Image/background/flowers/top-right-1.svg">
+		<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-1.svg">
+		<img class="flower-ornament flower-bottom-right" src="assets/Image/background/flowers/bottom-right-1.svg">
+
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2><i class="icon-gift"></i> Kirim Hadiah</h2>
+					<p style="color: #71836A">Doa restu Anda merupakan hadiah terindah bagi kami</p>
+					<button id="toggle-gift-button" class="btn btn-primary btn-sm" style="margin-top: 15px;">Tampilkan Informasi Hadiah</button>
+				</div>
+				
+				<div id="gift-cards-wrapper" class="is-hidden">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="item-protocol"
+							style="padding: 20px; border: 1px solid #71836A; border-radius: 10px; margin-bottom: 15px; min-height: 250px;">
+							<div class="description">
+								<h3 style="color: #71836A; margin-bottom: 15px;"><i class="icon-credit-card"></i> Bank
+									BRI</h3>
+								<div class="gift-info" style="margin-bottom: 10px;">
+									<span style="font-size: 13px;">Nomor Rekening</span><br>
+									<strong id="rek-bri" style="font-size: 18px; color: #333;">082229243737</strong>
+								</div>
+								<div class="gift-info" style="margin-bottom: 15px;">
+									<span style="font-size: 13px;">Atas Nama</span><br>
+									<strong style="color: #333;">Blacky</strong>
+								</div>
+								<button class="btn btn-primary btn-sm" onclick="copyRekening('rek-bri')"><i class="icon-clipboard"></i> Salin Rekening</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="item-protocol"
+							style="padding: 20px; border: 1px solid #71836A; border-radius: 10px; margin-bottom: 15px; min-height: 250px;">
+							<div class="description">
+								<h3 style="color: #71836A; margin-bottom: 15px;"><i class="icon-qrcode"></i> QRIS</h3>
+								<img src="assets/Image/donate.webp" alt="QRIS Cimeng" width="120" class="bank-logo"
+									style="border-radius: 8px; margin-bottom: 10px;">
+								<div class="gift-info" style="margin-bottom: 0;">
+									<span style="font-size: 13px;">Atas Nama</span><br>
+									<strong style="color: #333;">Cimeng</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="item-protocol"
+							style="padding: 20px; border: 1px solid #71836A; border-radius: 10px; margin-bottom: 15px; min-height: 250px;">
+							<div class="description">
+								<h3 style="color: #71836A; margin-bottom: 15px;"><i class="icon-gift"></i> Kirim Kado
+								</h3>
+								<div class="gift-info" style="margin-bottom: 5px; text-align: center;">
+									<strong class="parents-font"
+										style="color: #333; font-size: 16px; display: block; margin-bottom: 5px;">Alamat
+										Pengiriman:</strong>
+									<span style="font-size: 14px; display: block; line-height: 1.5;">RT 02, Desa Padang
+										Jaya, Kec. Kuaro, Kab. Paser, Kalimantan Timur 76281</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-started" class="fh5co-bg"
+		style="background: url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat; position: relative;">
+		<img class="flower-ornament flower-top-right" style="opacity: 0.9;" src="assets/Image/background/flowers/top-right-3.svg">
+		<img class="flower-ornament flower-bottom-left" style="opacity: 0.9;" src="assets/Image/background/flowers/bottom-left-3.svg">
+		<div class="container" style="position: relative; z-index: 1;">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 style="color: #71836A;">Konfirmasi Kehadiran</h2>
+					<p style="color: #5C6B56;">Mohon konfirmasikan kehadiran Anda melalui formulir di bawah ini.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<form id="rsvp-form" class="form-group">
+						<div class="form-group">
+							<input type="text" id="rsvp-name" class="form-control guest-name-input"
+								placeholder="Nama Lengkap" required>
+						</div>
+						<div class="form-group">
+							<select id="rsvp-count" class="form-control" required>
+								<option value="">-- Jumlah Tamu --</option>
+								<option value="1">1 Orang</option>
+								<option value="2">2 Orang</option>
+								<option value="3">3 Orang</option>
+								<option value="4">4 Orang</option>
+								<option value="5">5 Orang</option>
+							</select>
+						</div>
+
+						<div class="text-center">
+							<button type="submit" class="btn btn-default btn-block">Konfirmasi via WhatsApp <i
+									class="icon-whatsapp"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-testimonial"
+		style="background: url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat; border-top: 1px solid #f2f2f2">
+		<img class="flower-ornament flower-top-right" src="assets/Image/background/flowers/top-right-3.svg">
+		<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-3.svg">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Buku Tamu & Ucapan</h2>
+					<span style="color: #71836A">Doa Restu Anda merupakan karunia yang sangat berarti bagi
+						kami.</span>
+				</div>
+			</div>
+
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<form id="greeting-form" class="form-group">
+						<div class="form-group">
+							<input type="text" id="greeting-name" class="form-control guest-name-input"
+								placeholder="Nama Anda" required>
+						</div>
+						<div class="form-group">
+							<textarea id="greeting-message" class="form-control" rows="4"
+								placeholder="Tulis ucapan & doa Anda..." required></textarea>
+						</div>
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary">Kirim Ucapan via WhatsApp <i
+									class="icon-whatsapp"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="fh5co-footer" role="contentinfo"
+		style="background: url('assets/Image/background/repeat-background/so-white.png'); background-repeat:repeat; padding-bottom: 80px; position:relative;">
+		<img class="flower-ornament flower-bottom-right" src="assets/Image/background/flowers/bottom-right-1.svg">
+		<img class="flower-ornament flower-bottom-left" src="assets/Image/background/flowers/bottom-left-1.svg">
+		<div class="container" style="position:relative; z-index:1;">
+			<div class="row">
+				<div class="col-md-12 text-center" style="padding: 40px 20px 20px;">
+					<p
+						style="font-family:'Great Vibes',cursive; font-size:36px; color:#71836A; margin-bottom:12px; line-height:1;">
+						اَلْحَمْدُ لِلّٰهِ</p>
+					<p style="color:#555; font-size:14px; line-height:1.8; margin-bottom:20px;">
+						Merupakan suatu kehormatan dan kebahagiaan bagi kami,<br>
+						apabila Bapak/Ibu/Saudara/i berkenan hadir dalam acara pernikahan kami.<br>
+						Atas kehadiran dan doa restu Anda, kami ucapkan terima kasih.
+					</p>
+					<hr style="border-color: rgba(113,131,106,0.3); margin: 20px auto; max-width:300px;">
+					<p style="color:#71836A; font-weight:bold; font-size:15px; margin-bottom:8px;">EnP Digital
+						Service</p>
+					<p style="color:#888; font-size:13px; margin-bottom:4px;">
+						<i class="fa-solid fa-globe"></i> <a href="https://enpdigitalservice.my.id" target="_blank"
+							style="color:#71836A;">enpdigitalservice.my.id</a>
+					</p>
+					<p style="color:#888; font-size:13px; margin-bottom:4px;">
+						<i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/enpdigitalservice" target="_blank"
+							style="color:#71836A;">@enpdigitalservice</a>
+					</p>
+					<p style="color:#888; font-size:13px; margin-bottom:20px;">
+						<i class="fa-brands fa-tiktok"></i> <a href="https://tiktok.com/@enpdigitalservice" target="_blank"
+							style="color:#71836A;">@enpdigitalservice</a>
+					</p>
+					<p style="color:#bbb; font-size:11px;">Dibuat dengan ❤️ oleh <strong>EnP Digital
+							Service</strong> &mdash; Undangan Digital Premium</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div><!-- end:#page -->
+
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="script.js"></script>
+	<script>
+		// Skrip Paralaks Sederhana untuk Bunga
+		window.addEventListener('scroll', function() {
+			const scroll = window.pageYOffset;
+			document.querySelectorAll('.flower-ornament').forEach((el, i) => {
+				const speed = (i % 2 === 0) ? 0.05 : -0.05;
+				el.style.marginTop = (scroll * speed) + 'px';
+			});
+		});
+	</script>
+
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+
+</html>

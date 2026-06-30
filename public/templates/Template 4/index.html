@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Wedding Of : Blacky & Cimeng" />
+  <meta property="og:description" content="Rabu, 15 Maret 2027. Undangan Pernikahan Digital Blacky & Cimeng" />
+  <meta property="og:keywords" content="undangan, wedding, undangan digital, undangan online, wedding invitation, template undangan, template undangan pernikahan, undangan pernikahan, Blacky Cimeng">
+  <meta property="og:image" content="https://github.com/Erman4u/Publish-Image/blob/main/Template4.webp?raw=true" />
+  <meta property="og:image:secure_url" content="https://github.com/Erman4u/Publish-Image/blob/main/Template4.webp?raw=true">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:alt" content="Undangan Pernikahan Blacky & Cimeng">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:url" content="https://tema4.enpdigitalservice.my.id/" />
+  <meta property="og:site_name" content="Undangan Pernikahan Blacky & Cimeng">
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpeg" href="assets/icon/Logo-EnP.jpeg" />
+  <title>Undangan Pernikahan - Blacky & Cimeng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/aside_style.css" />
+  <link rel="stylesheet" href="assets/flipdown-master/src/flipdown.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="assets/flipdown-master/src/flipdown.js"></script>
+</head>
+
+<body>
+  <audio id="myAudio" loop>
+    <source src="assets/music/musik.mp3" type="audio/mpeg" />
+  </audio>
+  <button id="playButton" class="moon-button"></button>
+
+  <!-- ======== COVER / SPLASH ======== -->
+  <!-- Gambar di cover sebaiknya TANPA loading lazy agar langsung dimuat (Diatas Lini) -->
+  <div class="cover" id="cover">
+    <!-- Big corner flowers, like the reference -->
+    <div class="cover-flowers">
+      <img class="cover-fl cover-fl-tr" src="assets/images/flowers/top-right-1.svg" alt="">
+      <img class="cover-fl cover-fl-tl" src="assets/images/flowers/top-left-1.svg" alt="">
+      <img class="cover-fl cover-fl-br" src="assets/images/flowers/bottom-right-1.svg" alt="">
+      <img class="cover-fl cover-fl-bl" src="assets/images/flowers/bottom-left-1.svg" alt="">
+    </div>
+    <div class="cover-inner">
+      <p class="cover-wedding-of">THE WEDDING OF</p>
+
+      <!-- Circular photo with decorative ring -->
+      <div class="cover-photo-wrap">
+        <img src="assets/images/overlay.webp" alt="Blacky & Cimeng" class="cover-photo">
+      </div>
+
+      <!-- Couple names in script -->
+      <h1 class="cover-names">Rizky &amp; Riska</h1>
+
+      <!-- Tagline -->
+      <p class="cover-tagline">Kami berharap Anda menjadi bagian dari hari istimewa kami!</p>
+
+      <!-- Date -->
+      <p class="cover-date"><strong>Rabu, 15 Maret 2027</strong></p>
+
+      <!-- Guest name -->
+      <div class="cover-guest">
+        <span class="guest-label">Kepada Yth Bapak/Ibu/Saudara/i</span>
+        <span class="guest-name" id="guestName">Tamu Terhormat</span>
+      </div>
+
+      <!-- Open button -->
+      <button class="btn-open" id="open">
+        Buka Undangan
+      </button>
+    </div>
+  </div>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <section id="sectionKecil">
+
+    <!-- 0. HERO SECTION -->
+    <div class="section-wrap hero-section" id="hero">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" src="assets/images/flowers/top-right-1.svg" alt="">
+        <img class="fl fl-tl" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" src="assets/images/flowers/bottom-left-1.svg" alt="">
+      </div>
+
+      <!-- Decorative particles -->
+      <div class="hero-particles">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+
+      <div class="container hero-container">
+        <!-- The Wedding Of -->
+        <p class="hero-wedding-of">
+          <span class="hero-line-deco"></span>
+          The Wedding Of
+          <span class="hero-line-deco"></span>
+        </p>
+
+        <!-- Couple Photo -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring hero-photo-ring-outer"></div>
+          <img src="assets/images/gallery1.webp" alt="Blacky & Cimeng" class="hero-photo">
+        </div>
+
+        <!-- Names -->
+        <h1 class="hero-names">Rizky <span class="hero-ampersand">&</span> Riska</h1>
+
+        <!-- Decorative divider -->
+        <div class="hero-ornament-divider">
+          <span class="hero-orn-line"></span>
+          <i class="fa fa-heart hero-orn-heart"></i>
+          <span class="hero-orn-line"></span>
+        </div>
+
+        <!-- Save the Date -->
+        <p class="hero-save-label">Save the Date</p>
+        <div class="hero-date-box">
+          <div class="hero-date-item">
+            <span class="hero-date-num">15</span>
+            <span class="hero-date-sub">Maret</span>
+          </div>
+          <div class="hero-date-divider"></div>
+          <div class="hero-date-item">
+            <span class="hero-date-day">Rabu</span>
+            <span class="hero-date-sub">2027</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1. AYAT / BERANDA -->
+    <div class="section-wrap section-blue" id="beranda">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-1.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-1.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="divider-ornament">﷽</div>
+        <p class="section-label">Surah Ar-Rum Ayat 21</p>
+        <div class="divider-line"></div>
+        <p class="arabic-text">
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا
+          لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ
+          إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
+        </p>
+        <p class="translation-text">
+          "Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri
+          agar kamu cenderung dan merasa tenteram, dan Dia menjadikan di antaramu rasa kasih dan sayang."
+        </p>
+      </div>
+    </div>
+
+    <!-- 2. MEMPELAI -->
+    <div class="section-wrap section-light" id="mempelai">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-3.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-3.svg" alt="">
+      </div>
+      <div class="container">
+        <img loading="lazy" src="assets/images/bismillah.webp" alt="Bismillah" class="bismillah-img appear">
+        <p class="greeting-text appear">Assalamu'alaikum Warahmatullaahi Wabarakaatuh</p>
+        <p class="desc-text appear">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah
+          semoga ridho-Mu tercurah mengiringi pernikahan kami.</p>
+
+        <div class="couple-grid">
+          <!-- Wanita -->
+          <div class="couple-card appear">
+            <img loading="lazy" src="assets/images/wanita.jpg" alt="Cimeng" class="couple-photo">
+            <h2 class="couple-name">Riska</h2>
+            <p class="couple-fullname">Riski binti Tarno</p>
+            <p class="couple-parents">Putri ke-2 dari:<br>Bapak Tarno &<br>Ibu Aminah</p>
+            <a href="https://instagram.com/" target="_blank" class="btn-ig">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+
+          <div class="couple-separator appear">
+            <span>❤</span>
+          </div>
+
+          <!-- Pria -->
+          <div class="couple-card appear">
+            <img loading="lazy" src="assets/images/pria.jpg" alt="Blacky" class="couple-photo">
+            <h2 class="couple-name">Rizky</h2>
+            <p class="couple-fullname">Rizky bin Tono</p>
+            <p class="couple-parents">Putra ke-1 dari:<br>Bapak Tono &<br>Ibu Sana</p>
+            <a href="https://instagram.com/" target="_blank" class="btn-ig">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. KISAH CINTA -->
+    <div class="section-wrap section-blue" id="kisah">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-1.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-1.svg" alt="">
+      </div>
+      <div class="container">
+        <p class="section-label">Kisah Cinta Kami</p>
+        <div class="divider-line"></div>
+        <p class="desc-text" style="margin-bottom:30px;">Perjalanan dua hati yang dipertemukan oleh takdir-Nya</p>
+
+        <div class="story-card appear">
+          <div class="story-icon"><i class="fa fa-heart"></i></div>
+          <img loading="lazy" src="assets/images/overlay.webp" alt="Pertemuan" class="story-photo">
+          <h3>Awal Pertemuan Sederhana</h3>
+          <p>Nggak ada yang kebetulan di dunia ini, semuanya udah diatur sama Yang Di Atas. Awalnya kita berdua cuma dua orang asing yang kebetulan satu kantor. Tiap hari kerjaannya cuma papasan di koridor atau lift sambil masang muka jaim dan cuma ngangguk formal doang. Jangankan mikir bakal nikah, dulu kepikiran bakal ngobrol intens aja nggak sama sekali. Dua-duanya sama-sama gengsi dan asyik sama dunianya masing-masing.</p>
+        </div>
+
+        <div class="story-card appear">
+          <div class="story-icon"><i class="fa fa-star"></i></div>
+          <img loading="lazy" src="assets/images/gallery1.webp" alt="Benih Cinta" class="story-photo">
+          <h3>Benih Cinta dalam Ujian</h3>
+          <p>Semua berubah pas tiba-tiba ada project bareng yang mengharuskan kita buat sering kerja bareng. Dari yang tadinya kaku banget, pelan-pelan rasa kagum itu muncul waktu ngelihat cara dia kerja yang tanggung jawab dan sabar banget. Berawal dari diskusi harian, saling bantu beresin deadline, sampai momen nemenin nyari kopi pas lembur, rasa nyaman itu akhirnya tumbuh. Kita sadar, rasa ini ada bukan cuma karena sering ketemu, tapi karena ngerasa klop dan bisa saling ngisi satu sama lain.</p>
+        </div>
+
+        <div class="story-card appear">
+          <div class="story-icon"><i class="fa fa-mosque"></i></div>
+          <img loading="lazy" src="assets/images/gallery4.webp" alt="Menuju Ridha" class="story-photo">
+          <h3>Langkah Menuju Ridha Allah</h3>
+          <p>Setelah ngelewatin banyak cerita dan makin yakin satu sama lain, ditambah dapet restu penuh dari orang tua, kita berdua mutusin buat serius. Kita sepakat buat menyudahi masa-masa jadi rekan kerja biasa, dan siap buat melangkah jadi pasangan seumur hidup lewat ikatan pernikahan. Semoga langkah baru ini dituntun jadi keluarga yang penuh berkah, bahagia terus kedepannya, dan langgeng sampai tua.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. ACARA -->
+    <div class="section-wrap section-light" id="acara">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-3.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-3.svg" alt="">
+      </div>
+      <div class="container">
+        <p class="section-label-dark">Akad & Resepsi</p>
+        <div class="divider-line-dark"></div>
+
+        <div class="event-grid">
+          <div class="event-card appear">
+            <div class="event-icon"><i class="fa fa-ring"></i></div>
+            <h3>Akad Nikah</h3>
+            <div class="event-date">
+              <span class="event-day">15</span>
+              <div class="event-detail">
+                <span>Rabu</span>
+                <span>Maret 2027</span>
+              </div>
+            </div>
+            <p class="event-time"><i class="fa fa-clock"></i> 08:00 – 10:00 WITA</p>
+            <p class="event-loc"><i class="fa fa-map-marker-alt"></i> RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser,
+              Kaltim</p>
+          </div>
+
+          <div class="event-card appear">
+            <div class="event-icon"><i class="fa fa-utensils"></i></div>
+            <h3>Resepsi Pernikahan</h3>
+            <div class="event-date">
+              <span class="event-day">15</span>
+              <div class="event-detail">
+                <span>Rabu</span>
+                <span>Maret 2027</span>
+              </div>
+            </div>
+            <p class="event-time"><i class="fa fa-clock"></i> 13:00 – Selesai</p>
+            <p class="event-loc"><i class="fa fa-map-marker-alt"></i> RT 02, Desa Padang Jaya, Kec. Kuaro, Kab. Paser,
+              Kaltim</p>
+          </div>
+        </div>
+
+        <div class="countdown-wrap appear">
+          <p class="section-label-dark" style="font-size:18px; margin-bottom:10px;">Hitung Mundur</p>
+          <div class="flipdown-container">
+            <div id="flipdown" class="flipdown"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. LOKASI -->
+    <div class="section-wrap section-blue" id="lokasi">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-1.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-1.svg" alt="">
+      </div>
+      <div class="container">
+        <p class="section-label">Lokasi Acara</p>
+        <div class="divider-line"></div>
+        <p class="desc-text" style="margin-bottom:20px;">Desa Padang Jaya, Kuaro, Kab. Paser</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15933.111956557876!2d116.108253!3d-1.844111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df05a069ba3db5b%3A0xe6bfcc057f8cf28!2sPadang%20Jaya%2C%20Kuaro%2C%20Paser%20Regency%2C%20East%20Kalimantan!5e0!3m2!1sen!2sid!4v1713063512345!5m2!1sen!2sid"
+          class="maps-embed appear" style="border:0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a href="https://maps.app.goo.gl/search/Padang+Jaya+Kuaro+Paser" target="_blank" class="btn-map appear">
+          <i class="fa fa-map-marked-alt"></i> Buka di Google Maps
+        </a>
+      </div>
+    </div>
+
+    <!-- 6. GALERI -->
+    <div class="section-wrap section-light" id="galeri">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-3.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-3.svg" alt="">
+      </div>
+      <div class="container">
+        <p class="section-label-dark">Galeri Foto</p>
+        <div class="divider-line-dark"></div>
+
+        <div class="gallery-slider appear">
+          <div class="slide active"><img loading="lazy" src="assets/images/gallery1.webp" alt="Foto 1"></div>
+          <div class="slide"><img loading="lazy" src="assets/images/gallery4.webp" alt="Foto 2"></div>
+          <div class="slide"><img loading="lazy" src="assets/images/gallery5.webp" alt="Foto 3"></div>
+          <button class="slide-btn prev-btn" onclick="plusSlide(-1)">&#10094;</button>
+          <button class="slide-btn next-btn" onclick="plusSlide(1)">&#10095;</button>
+        </div>
+
+        
+
+        <div class="video-wrap appear">
+          <iframe src="https://www.youtube.com/embed/0ucAmPtMn7w?rel=0" title="Pre-wedding video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. HADIAH -->
+    <div class="section-wrap section-blue" id="hadiah">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-1.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-1.svg" alt="">
+      </div>
+      <div class="container">
+        <p class="section-label">Kirim Hadiah</p>
+        <div class="divider-line"></div>
+        <p class="desc-text" style="margin-bottom:25px;">Doa restu Anda merupakan hadiah terindah bagi kami</p>
+        <button class="gift-toggle-btn appear" id="giftToggle" onclick="toggleGift()">
+          <i class="fa fa-gift"></i> Lihat Detail Hadiah <i class="fa fa-chevron-down"></i>
+        </button>
+
+        <div class="gift-content" id="giftContent">
+          <div class="gift-card appear">
+            <div class="gift-bank">
+              <img loading="lazy" src="assets/icon/Logo-Bank-BRI.png" alt="BRI">
+              <div>
+                <p class="bank-name">Bank BRI</p>
+                <p class="bank-number">0822-2924-3737</p>
+                <p class="bank-holder">a.n. Blacky</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-divider appear"><span>— atau —</span></div>
+
+          <div class="gift-card appear">
+            <p class="bank-name">QRIS</p>
+            <p class="bank-holder" style="margin-bottom:10px;">a.n. Cimeng</p>
+            <img loading="lazy" src="assets/icon/donate.jpeg" alt="QRIS" class="qris-img">
+          </div>
+
+          <div class="gift-card appear" style="margin-top:20px;">
+            <p class="bank-name"><i class="fa fa-box"></i> Kirim Kado Fisik</p>
+            <p class="bank-holder" style="margin-top:8px; line-height:1.6;">RT 02, Desa Padang Jaya, Kec. Kuaro,<br>Kab.
+              Paser, Kalimantan Timur 76281</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. RSVP -->
+    <div class="section-wrap section-light" id="rsvp">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-3.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-3.svg" alt="">
+      </div>
+      <div class="container">
+        <p class="section-label-dark">Konfirmasi Kehadiran</p>
+        <div class="divider-line-dark"></div>
+        <p class="desc-text-dark appear" style="margin-bottom:25px;">Mohon konfirmasikan kehadiran Anda</p>
+        <a href="https://wa.me/6282229243737?text=Halo%20saya%20ingin%20konfirmasi%20kehadiran" class="btn-wa appear">
+          <i class="fab fa-whatsapp"></i> Konfirmasi via WhatsApp
+        </a>
+
+        <p class="section-label-dark" style="margin-top:40px; font-size:22px;">Buku Tamu & Ucapan</p>
+        <p class="desc-text-dark appear" style="margin-bottom:20px; margin-top:10px;">Doa restu Anda merupakan karunia
+          yang sangat berarti bagi kami</p>
+        <a href="https://wa.me/6282229243737?text=Halo,%20saya%20ingin%20mengirimkan%20doa%20restu"
+          class="btn-wa appear">
+          <i class="fab fa-whatsapp"></i> Kirim Ucapan via WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- 9. PENUTUP -->
+    <div class="section-wrap section-blue" id="penutup">
+      <div class="flowers-corner">
+        <img class="fl fl-tr" loading="lazy" src="assets/images/flowers/top-right-1.svg" alt="">
+        <img class="fl fl-tl" loading="lazy" src="assets/images/flowers/top-left-1.svg" alt="">
+        <img class="fl fl-br" loading="lazy" src="assets/images/flowers/bottom-right-1.svg" alt="">
+        <img class="fl fl-bl" loading="lazy" src="assets/images/flowers/bottom-left-1.svg" alt="">
+      </div>
+      <div class="container">
+        <img loading="lazy" src="assets/images/overlay.webp" alt="Blacky & Cimeng" class="penutup-photo appear">
+        <p class="arabic-text appear" style="font-size:28px; margin-bottom:10px;">اَلْحَمْدُ لِلّٰهِ</p>
+        <p class="desc-text appear">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
+          berkenan hadir. Atas kehadiran dan doa restu Anda, kami ucapkan terima kasih.</p>
+        <h2 class="closing-names appear">Rizky & Riska</h2>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-wrap">
+      <p class="footer-brand">EnP Digital Service</p>
+      <p class="footer-link"><a href="https://enpdigitalservice.my.id" target="_blank">enpdigitalservice.my.id</a></p>
+      <p class="footer-link"><a href="https://instagram.com/enpdigitalservice" target="_blank">@enpdigitalservice</a>
+      </p>
+      <p class="footer-copy">Dibuat dengan ❤️ oleh EnP Digital Service — Undangan Digital Premium</p>
+    </div>
+
+    <!-- Bottom Navbar -->
+    <nav id="bottom-nav">
+      <ul class="nav-links">
+        <li><a href="#beranda" onclick="scrollToSection('beranda'); return false;"><i
+              class="fa fa-home"></i><br>Beranda</a></li>
+        <li><a href="#mempelai" onclick="scrollToSection('mempelai'); return false;"><i
+              class="fa fa-user-friends"></i><br>Mempelai</a></li>
+        <li><a href="#kisah" onclick="scrollToSection('kisah'); return false;"><i class="fa fa-heart"></i><br>Kisah</a>
+        </li>
+        <li><a href="#acara" onclick="scrollToSection('acara'); return false;"><i
+              class="fa fa-calendar-alt"></i><br>Acara</a></li>
+        <li><a href="#galeri" onclick="scrollToSection('galeri'); return false;"><i
+              class="fa fa-images"></i><br>Galeri</a></li>
+        <li><a href="#hadiah" onclick="scrollToSection('hadiah'); return false;"><i
+              class="fa fa-gift"></i><br>Hadiah</a></li>
+        <li><a href="#rsvp" onclick="scrollToSection('rsvp'); return false;"><i class="fa fa-envelope"></i><br>RSVP</a>
+        </li>
+      </ul>
+    </nav>
+
+  </section>
+
+  <script src="assets/js/core_script.js"></script>
+
+<!-- SCRIPT UNTUK LIVE PREVIEW EDITOR SAAS -->
+<script>
+  window.addEventListener('message', function(event) {
+    const data = event.data;
+    if (!data) return;
+    
+    // Coba update text content dari ID statis jika ada
+    const groomEl = document.getElementById('groom-name') || document.querySelector('.groom-name');
+    if(groomEl && data.groom_name) groomEl.innerText = data.groom_name;
+    
+    const brideEl = document.getElementById('bride-name') || document.querySelector('.bride-name');
+    if(brideEl && data.bride_name) brideEl.innerText = data.bride_name;
+    
+    const dateEl = document.getElementById('event-date') || document.querySelector('.event-date');
+    if(dateEl && data.event_date) dateEl.innerText = data.event_date;
+    
+    const locEl = document.getElementById('event-location') || document.querySelector('.event-location');
+    if(locEl && data.event_location) locEl.innerText = data.event_location;
+    
+    console.log("Template menerima update dari editor:", data);
+  });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <radialGradient id="roseCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff8fb1"/>
+      <stop offset="60%" stop-color="#e91e8c"/>
+      <stop offset="100%" stop-color="#c2185b"/>
+    </radialGradient>
+    <radialGradient id="rosePale" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffcce0"/>
+      <stop offset="60%" stop-color="#f48fb1"/>
+      <stop offset="100%" stop-color="#e91e8c"/>
+    </radialGradient>
+    <radialGradient id="roseMini" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="70%" stop-color="#f8bbd0"/>
+      <stop offset="100%" stop-color="#f48fb1"/>
+    </radialGradient>
+    <radialGradient id="petalGold" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff176"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </radialGradient>
+  </defs>
+
+  <!-- === STEMS & VINES === -->
+  <!-- Main diagonal stem -->
+  <path d="M 5 195 C 20 160, 40 130, 60 100 C 80 70, 110 45, 145 20" 
+        stroke="#6d9c6a" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <!-- Branch 1 -->
+  <path d="M 38 138 C 50 125, 68 118, 80 108" 
+        stroke="#6d9c6a" stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
+  <!-- Branch 2 -->
+  <path d="M 68 100 C 60 82, 55 65, 62 48" 
+        stroke="#6d9c6a" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+  <!-- Branch 3 to right -->
+  <path d="M 100 62 C 115 55, 130 50, 148 48" 
+        stroke="#6d9c6a" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+  <!-- Small tendril -->
+  <path d="M 145 20 C 158 12, 168 8, 178 5" 
+        stroke="#6d9c6a" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Curly tendrils -->
+  <path d="M 80 108 C 92 102, 98 90, 92 80" 
+        stroke="#8db88a" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.65"/>
+  <path d="M 148 48 C 160 42, 165 30, 158 22" 
+        stroke="#8db88a" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- === LEAVES === -->
+  <!-- Leaf 1 - large left -->
+  <path d="M 25 170 C 10 155, 5 135, 18 125 C 28 118, 38 128, 38 140 C 38 152, 32 162, 25 170 Z" 
+        fill="#5a9e5a" opacity="0.82"/>
+  <path d="M 25 170 C 30 155, 33 138, 38 140" 
+        stroke="#4a8a4a" stroke-width="0.8" fill="none" opacity="0.6"/>
+
+  <!-- Leaf 2 - medium -->
+  <path d="M 55 130 C 42 118, 38 100, 50 92 C 60 86, 70 96, 68 110 C 66 122, 60 128, 55 130 Z" 
+        fill="#62a45e" opacity="0.78"/>
+  <path d="M 55 130 C 58 115, 63 100, 68 110" 
+        stroke="#4a8a4a" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+  <!-- Leaf 3 - top right area -->
+  <path d="M 130 35 C 118 22, 118 5, 130 2 C 140 0, 148 12, 144 24 C 140 35, 134 38, 130 35 Z" 
+        fill="#62a45e" opacity="0.78"/>
+
+  <!-- Leaf 4 - small near main rose -->
+  <path d="M 78 75 C 65 65, 60 50, 70 44 C 78 40, 85 50, 82 62 C 80 70, 79 74, 78 75 Z" 
+        fill="#5a9e5a" opacity="0.72"/>
+
+  <!-- Leaf 5 - small accent -->
+  <path d="M 112 80 C 122 68, 138 65, 142 74 C 145 82, 135 90, 124 88 C 116 86, 111 83, 112 80 Z" 
+        fill="#6aaa66" opacity="0.7"/>
+
+  <!-- Leaf 6 - near bottom -->
+  <path d="M 12 168 C 18 175, 28 182, 35 175 C 41 168, 35 158, 25 158 C 16 158, 10 163, 12 168 Z" 
+        fill="#5a9e5a" opacity="0.65"/>
+
+  <!-- === MAIN LARGE ROSE (center area ~90, 70) === -->
+  <!-- Outer petals layer 1 -->
+  <ellipse cx="90" cy="68" rx="22" ry="14" fill="url(#rosePale)" transform="rotate(-30 90 68)" opacity="0.9"/>
+  <ellipse cx="90" cy="68" rx="22" ry="14" fill="url(#rosePale)" transform="rotate(20 90 68)" opacity="0.9"/>
+  <ellipse cx="90" cy="68" rx="20" ry="12" fill="url(#rosePale)" transform="rotate(75 90 68)" opacity="0.88"/>
+  <ellipse cx="90" cy="68" rx="20" ry="12" fill="url(#rosePale)" transform="rotate(-80 90 68)" opacity="0.88"/>
+  <!-- Middle petals -->
+  <ellipse cx="90" cy="68" rx="17" ry="10" fill="url(#roseCenter)" transform="rotate(10 90 68)" opacity="0.92"/>
+  <ellipse cx="90" cy="68" rx="17" ry="10" fill="url(#roseCenter)" transform="rotate(-50 90 68)" opacity="0.92"/>
+  <ellipse cx="90" cy="68" rx="17" ry="10" fill="url(#roseCenter)" transform="rotate(110 90 68)" opacity="0.9"/>
+  <!-- Inner petals -->
+  <ellipse cx="90" cy="68" rx="13" ry="8" fill="#e91e8c" transform="rotate(0 90 68)" opacity="0.95"/>
+  <ellipse cx="90" cy="68" rx="13" ry="8" fill="#e91e8c" transform="rotate(60 90 68)" opacity="0.95"/>
+  <ellipse cx="90" cy="68" rx="13" ry="8" fill="#e91e8c" transform="rotate(-60 90 68)" opacity="0.95"/>
+  <!-- Center -->
+  <circle cx="90" cy="68" r="7" fill="url(#petalGold)"/>
+  <circle cx="88" cy="66" r="2.5" fill="#fff176" opacity="0.7"/>
+  <!-- Stamen dots -->
+  <circle cx="90" cy="65" r="1.2" fill="#d4af37" opacity="0.9"/>
+  <circle cx="93" cy="68" r="1" fill="#d4af37" opacity="0.9"/>
+  <circle cx="87" cy="70" r="1" fill="#d4af37" opacity="0.9"/>
+
+  <!-- === MEDIUM ROSE (near top right ~148, 28) === -->
+  <ellipse cx="148" cy="28" rx="16" ry="10" fill="url(#rosePale)" transform="rotate(-25 148 28)" opacity="0.88"/>
+  <ellipse cx="148" cy="28" rx="16" ry="10" fill="url(#rosePale)" transform="rotate(35 148 28)" opacity="0.88"/>
+  <ellipse cx="148" cy="28" rx="16" ry="10" fill="url(#rosePale)" transform="rotate(100 148 28)" opacity="0.85"/>
+  <ellipse cx="148" cy="28" rx="13" ry="8" fill="url(#roseCenter)" transform="rotate(5 148 28)" opacity="0.92"/>
+  <ellipse cx="148" cy="28" rx="13" ry="8" fill="url(#roseCenter)" transform="rotate(65 148 28)" opacity="0.92"/>
+  <ellipse cx="148" cy="28" rx="10" ry="6" fill="#d81b6a" transform="rotate(-40 148 28)" opacity="0.95"/>
+  <circle cx="148" cy="28" r="5.5" fill="url(#petalGold)"/>
+  <circle cx="147" cy="27" r="1.8" fill="#fff176" opacity="0.6"/>
+
+  <!-- === SMALL ROSE (bottom ~38,148) === -->
+  <ellipse cx="38" cy="148" rx="13" ry="8" fill="url(#rosePale)" transform="rotate(-15 38 148)" opacity="0.88"/>
+  <ellipse cx="38" cy="148" rx="13" ry="8" fill="url(#rosePale)" transform="rotate(50 38 148)" opacity="0.88"/>
+  <ellipse cx="38" cy="148" rx="11" ry="7" fill="url(#roseCenter)" transform="rotate(20 38 148)" opacity="0.9"/>
+  <ellipse cx="38" cy="148" rx="9" ry="5.5" fill="#e91e8c" transform="rotate(-45 38 148)" opacity="0.95"/>
+  <circle cx="38" cy="148" r="4.5" fill="url(#petalGold)"/>
+
+  <!-- === MINI BUD (along stem ~62, 48) === -->
+  <!-- Bud petals closed -->
+  <path d="M 62 48 C 56 42, 55 35, 62 32 C 69 35, 68 42, 62 48 Z" fill="#f48fb1" opacity="0.9"/>
+  <path d="M 62 48 C 58 40, 60 33, 66 35 C 70 38, 68 45, 62 48 Z" fill="#e91e8c" opacity="0.85"/>
+  <path d="M 62 48 C 66 41, 66 34, 62 32 C 59 34, 59 41, 62 48 Z" fill="#f8bbd0" opacity="0.75"/>
+  <!-- Bud sepals -->
+  <path d="M 62 48 C 57 50, 54 53, 57 56" stroke="#6d9c6a" stroke-width="1.2" fill="none"/>
+  <path d="M 62 48 C 67 50, 70 53, 67 56" stroke="#6d9c6a" stroke-width="1.2" fill="none"/>
+
+  <!-- === MINI BUD 2 (top area ~175, 8) === -->
+  <path d="M 175 8 C 170 3, 170 -2, 175 -4 C 180 -2, 180 3, 175 8 Z" fill="#f48fb1" opacity="0.85"/>
+  <path d="M 175 8 C 172 2, 173 -2, 177 -1 C 180 2, 179 6, 175 8 Z" fill="#e91e8c" opacity="0.8"/>
+
+  <!-- === SMALL CHERRY BLOSSOMS (scattered) === -->
+  <!-- Blossom 1 at ~115, 88 -->
+  <g transform="translate(115, 88)">
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(0)" opacity="0.9"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(72)" opacity="0.9"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(144)" opacity="0.88"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(216)" opacity="0.88"/>
+    <ellipse rx="5.5" ry="3" fill="#ffcce0" transform="rotate(288)" opacity="0.88"/>
+    <circle r="3" fill="url(#petalGold)"/>
+  </g>
+
+  <!-- Blossom 2 at ~18, 110 -->
+  <g transform="translate(18, 110)">
+    <ellipse rx="4.5" ry="2.5" fill="#f8bbd0" transform="rotate(0)" opacity="0.85"/>
+    <ellipse rx="4.5" ry="2.5" fill="#f8bbd0" transform="rotate(72)" opacity="0.85"/>
+    <ellipse rx="4.5" ry="2.5" fill="#f8bbd0" transform="rotate(144)" opacity="0.82"/>
+    <ellipse rx="4.5" ry="2.5" fill="#f8bbd0" transform="rotate(216)" opacity="0.82"/>
+    <ellipse rx="4.5" ry="2.5" fill="#f8bbd0" transform="rotate(288)" opacity="0.82"/>
+    <circle r="2.5" fill="url(#petalGold)"/>
+  </g>
+
+  <!-- Blossom 3 at ~168, 58 -->
+  <g transform="translate(168, 58)">
+    <ellipse rx="4" ry="2.2" fill="#f48fb1" transform="rotate(0)" opacity="0.82"/>
+    <ellipse rx="4" ry="2.2" fill="#f48fb1" transform="rotate(72)" opacity="0.82"/>
+    <ellipse rx="4" ry="2.2" fill="#f48fb1" transform="rotate(144)" opacity="0.8"/>
+    <ellipse rx="4" ry="2.2" fill="#f48fb1" transform="rotate(216)" opacity="0.8"/>
+    <ellipse rx="4" ry="2.2" fill="#f48fb1" transform="rotate(288)" opacity="0.8"/>
+    <circle r="2.2" fill="#f0d060"/>
+  </g>
+
+  <!-- Blossom 4 tiny at ~50,65 -->
+  <g transform="translate(50, 65)">
+    <ellipse rx="3.5" ry="2" fill="#ffcce0" transform="rotate(0)" opacity="0.8"/>
+    <ellipse rx="3.5" ry="2" fill="#ffcce0" transform="rotate(72)" opacity="0.8"/>
+    <ellipse rx="3.5" ry="2" fill="#ffcce0" transform="rotate(144)" opacity="0.78"/>
+    <ellipse rx="3.5" ry="2" fill="#ffcce0" transform="rotate(216)" opacity="0.78"/>
+    <ellipse rx="3.5" ry="2" fill="#ffcce0" transform="rotate(288)" opacity="0.78"/>
+    <circle r="1.8" fill="#d4af37"/>
+  </g>
+
+  <!-- === FALLING PETALS (scattered small) === -->
+  <ellipse cx="170" cy="100" rx="5" ry="2.5" fill="#f8bbd0" transform="rotate(-30 170 100)" opacity="0.55"/>
+  <ellipse cx="30" cy="55" rx="4" ry="2" fill="#f48fb1" transform="rotate(45 30 55)" opacity="0.5"/>
+  <ellipse cx="130" cy="130" rx="4.5" ry="2" fill="#ffcce0" transform="rotate(-60 130 130)" opacity="0.45"/>
+  <ellipse cx="100" cy="130" rx="3.5" ry="1.8" fill="#f8bbd0" transform="rotate(20 100 130)" opacity="0.5"/>
+  <ellipse cx="158" cy="78" rx="3" ry="1.5" fill="#f48fb1" transform="rotate(-45 158 78)" opacity="0.5"/>
+  <ellipse cx="75" cy="145" rx="4" ry="2" fill="#ffcce0" transform="rotate(15 75 145)" opacity="0.45"/>
+
+  <!-- === TINY DOTS / BERRIES === -->
+  <circle cx="95" cy="100" r="3" fill="#d81b6a" opacity="0.6"/>
+  <circle cx="100" cy="105" r="2.2" fill="#e91e8c" opacity="0.55"/>
+  <circle cx="88" cy="104" r="2.5" fill="#c2185b" opacity="0.5"/>
+  <circle cx="168" cy="38" r="2.5" fill="#d4af37" opacity="0.65"/>
+  <circle cx="175" cy="33" r="2" fill="#d4af37" opacity="0.55"/>
+</svg>
